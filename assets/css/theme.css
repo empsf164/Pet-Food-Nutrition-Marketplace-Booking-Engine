@@ -87,10 +87,10 @@
   --slot-disabled-bg: #F1ECE6;
   --slot-disabled-text: #A69E96;
 
-  --footer-bg: #0E2820;
-  --footer-text: #CBD5CE;
-  --footer-heading: #FAF8F5;
-  --footer-border: rgba(255, 255, 255, 0.1);
+  --footer-bg: #FFFFFF;
+  --footer-text: #4A564F;
+  --footer-heading: #14382C;
+  --footer-border: #E6DFD6;
 
   /* Radius & Transitions */
   --radius-sm: 8px;
@@ -139,17 +139,17 @@
   --badge-bg: #1B2E25;
   --badge-text: #A6CBB3;
 
-  --btn-primary-bg: #7C9A84;
-  --btn-primary-text: #0B1410;
-  --btn-primary-hover: #91B19A;
+  --btn-primary-bg: #236B4D;
+  --btn-primary-text: #FFFFFF;
+  --btn-primary-hover: #2D8560;
 
-  --btn-secondary-bg: #17241E;
-  --btn-secondary-text: #E5EDE7;
-  --btn-secondary-border: #2B3D34;
-  --btn-secondary-hover: #21332A;
+  --btn-secondary-bg: #182821;
+  --btn-secondary-text: #F4F6F4;
+  --btn-secondary-border: #2E4539;
+  --btn-secondary-hover: #22382E;
 
   --btn-accent-bg: #D47A60;
-  --btn-accent-text: #0E1714;
+  --btn-accent-text: #FFFFFF;
   --btn-accent-hover: #E08C74;
 
   --input-bg: #121E19;

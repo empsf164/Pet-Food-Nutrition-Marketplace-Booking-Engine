@@ -6,6 +6,10 @@
   <title>Contact & Marketplace Support — NOURIPET</title>
   <meta name="description" content="Get in touch with the NOURIPET marketplace support team, inquire about host applications, or ask nutrition booking questions.">
   
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="shortcut icon" href="assets/images/favicon.svg">
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,36 +41,8 @@
       <nav class="np-desktop-nav d-none d-lg-block" aria-label="Main Navigation">
         <ul class="np-nav-links">
           <li class="np-nav-item"><a href="index.html" class="np-nav-link">Home</a></li>
-          
-          <li class="np-nav-item">
-            <a href="marketplace.html" class="np-nav-link">
-              Marketplace <i class="bi bi-chevron-down fs-xs ms-1"></i>
-            </a>
-            <ul class="np-dropdown-menu">
-              <li><a href="marketplace.html" class="np-dropdown-item"><i class="bi bi-grid-fill"></i> Browse Services</a></li>
-              <li><a href="marketplace.html?cat=pet-food" class="np-dropdown-item"><i class="bi bi-basket2-fill"></i> Pet Food</a></li>
-              <li><a href="marketplace.html?cat=plans" class="np-dropdown-item"><i class="bi bi-journal-medical"></i> Nutrition Plans</a></li>
-              <li><a href="marketplace.html?filter=featured" class="np-dropdown-item"><i class="bi bi-star-fill"></i> Featured Hosts</a></li>
-              <li><a href="marketplace.html?filter=popular" class="np-dropdown-item"><i class="bi bi-fire"></i> Popular Services</a></li>
-            </ul>
-          </li>
-
-          <li class="np-nav-item">
-            <a href="service-details.html" class="np-nav-link">
-              Nutrition Services <i class="bi bi-chevron-down fs-xs ms-1"></i>
-            </a>
-            <ul class="np-dropdown-menu">
-              <li><a href="service-details.html" class="np-dropdown-item"><i class="bi bi-chat-heart"></i> Nutrition Consultation</a></li>
-              <li><a href="service-details.html" class="np-dropdown-item"><i class="bi bi-card-checklist"></i> Personalized Meal Plans</a></li>
-              <li><a href="service-details.html" class="np-dropdown-item"><i class="bi bi-search"></i> Food Assessment</a></li>
-              <li><a href="service-details.html" class="np-dropdown-item"><i class="bi bi-shield-check"></i> Allergy & Sensitivity Guidance</a></li>
-              <li><a href="service-details.html" class="np-dropdown-item"><i class="bi bi-speedometer2"></i> Weight Management</a></li>
-              <li><a href="service-details.html" class="np-dropdown-item"><i class="bi bi-stars"></i> Puppy & Kitten Nutrition</a></li>
-            </ul>
-          </li>
-
-          <li class="np-nav-item"><a href="index.html#how-it-works" class="np-nav-link">How It Works</a></li>
-          <li class="np-nav-item"><a href="signup.html?role=host" class="np-nav-link">For Hosts</a></li>
+          <li class="np-nav-item"><a href="marketplace.html" class="np-nav-link">Marketplace</a></li>
+          <li class="np-nav-item"><a href="services.html" class="np-nav-link">Nutrition Services</a></li>
           <li class="np-nav-item"><a href="resources.html" class="np-nav-link">Resources</a></li>
           <li class="np-nav-item"><a href="about.html" class="np-nav-link">About</a></li>
           <li class="np-nav-item"><a href="contact.html" class="np-nav-link active">Contact</a></li>
@@ -78,7 +54,6 @@
           <i class="bi bi-moon-stars-fill"></i>
         </button>
         <a href="login.html" class="btn btn-np-secondary btn-np-sm">Login</a>
-        <a href="signup.html" class="btn btn-np-secondary btn-np-sm">Sign Up</a>
         <a href="booking.html" class="btn btn-np-primary btn-np-sm">
           <i class="bi bi-calendar2-check-fill me-1"></i> Book a Consultation
         </a>
@@ -99,28 +74,25 @@
   <div class="np-mobile-backdrop"></div>
   <aside class="np-mobile-menu">
     <div class="d-flex align-items-center justify-content-between pb-3 border-bottom mb-3">
-      <div class="navbar-brand">
+      <a href="index.html" class="navbar-brand">
         <span class="brand-leaf-icon"><i class="bi bi-heart-pulse-fill"></i></span>
         <span>NOURIPET</span>
-      </div>
+      </a>
       <button type="button" class="btn-close np-mobile-close" aria-label="Close"></button>
     </div>
     <ul class="list-unstyled d-flex flex-column gap-2 mb-4">
       <li><a href="index.html" class="np-nav-link w-100">Home</a></li>
       <li><a href="marketplace.html" class="np-nav-link w-100">Marketplace</a></li>
-      <li><a href="service-details.html" class="np-nav-link w-100">Nutrition Services</a></li>
-      <li><a href="index.html#how-it-works" class="np-nav-link w-100">How It Works</a></li>
-      <li><a href="signup.html?role=host" class="np-nav-link w-100">For Hosts</a></li>
+      <li><a href="services.html" class="np-nav-link w-100">Nutrition Services</a></li>
       <li><a href="resources.html" class="np-nav-link w-100">Resources</a></li>
       <li><a href="about.html" class="np-nav-link w-100">About</a></li>
       <li><a href="contact.html" class="np-nav-link w-100 active">Contact</a></li>
     </ul>
     <div class="mt-auto pt-3 border-top d-flex flex-column gap-2">
-      <div class="d-flex gap-2">
-        <a href="login.html" class="btn btn-np-secondary w-50 text-center">Login</a>
-        <a href="signup.html" class="btn btn-np-secondary w-50 text-center">Sign Up</a>
-      </div>
-      <a href="booking.html" class="btn btn-np-primary w-100 text-center">Book a Consultation</a>
+      <a href="login.html" class="btn btn-np-secondary w-100 text-center">Login</a>
+      <a href="booking.html" class="btn btn-np-primary w-100 text-center">
+        <i class="bi bi-calendar2-check-fill me-1"></i> Book a Consultation
+      </a>
     </div>
   </aside>
 
@@ -137,7 +109,7 @@
     </div>
   </section>
 
-  <section class="section-padding">
+  <section class="section-padding pb-4">
     <div class="container">
       <div class="row g-5">
         
@@ -162,8 +134,8 @@
                   <select id="contactPetType" class="form-select">
                     <option value="dog" selected>Dog (Canine)</option>
                     <option value="cat">Cat (Feline)</option>
-                    <option value="puppy">Puppy (< 1 yr)</option>
-                    <option value="kitten">Kitten (< 1 yr)</option>
+                    <option value="puppy">Puppy (&lt; 1 yr)</option>
+                    <option value="kitten">Kitten (&lt; 1 yr)</option>
                     <option value="senior">Senior Pet</option>
                     <option value="general">General Marketplace Inquiry</option>
                   </select>
@@ -195,10 +167,11 @@
           </div>
         </div>
 
-        <!-- Contact Info Column -->
+        <!-- Contact Info & Socials Column -->
         <div class="col-lg-5">
           <div class="d-flex flex-column gap-4">
             
+            <!-- Marketplace Support Channels -->
             <div class="np-card p-4">
               <h4 class="fw-bold fs-5 mb-3 font-serif">Marketplace Support Channels</h4>
               
@@ -208,7 +181,7 @@
                     <i class="bi bi-envelope"></i>
                   </div>
                   <div>
-                    <strong class="d-block text-dark">Email Support</strong>
+                    <strong class="d-block" style="color: var(--text-primary);">Email Support</strong>
                     <a href="mailto:support@nouripet.com" class="text-forest">support@nouripet.com</a>
                     <div class="text-muted" style="font-size: 0.72rem;">24/7 inbox monitoring</div>
                   </div>
@@ -219,8 +192,8 @@
                     <i class="bi bi-telephone"></i>
                   </div>
                   <div>
-                    <strong class="d-block text-dark">Phone Consult Coordination</strong>
-                    <span class="text-dark">+1 (800) 555-NOURI (6687)</span>
+                    <strong class="d-block" style="color: var(--text-primary);">Phone Consult Coordination</strong>
+                    <span style="color: var(--text-primary);">+1 (800) 555-NOURI (6687)</span>
                     <div class="text-muted" style="font-size: 0.72rem;">Mon - Fri, 8 AM - 6 PM PST</div>
                   </div>
                 </div>
@@ -230,13 +203,47 @@
                     <i class="bi bi-geo-alt"></i>
                   </div>
                   <div>
-                    <strong class="d-block text-dark">Headquarters</strong>
+                    <strong class="d-block" style="color: var(--text-primary);">Headquarters</strong>
                     <span class="text-muted">742 Evergreen Terrace, Suite 300<br>Portland, OR 97201</span>
                   </div>
                 </div>
               </div>
             </div>
 
+            <!-- Social Media Channels & Community -->
+            <div class="np-card p-4">
+              <h4 class="fw-bold fs-5 mb-2 font-serif">Follow & Connect with Us</h4>
+              <p class="small text-muted mb-3">Join our community of 45,000+ pet parents and holistic nutrition specialists across social platforms.</p>
+              
+              <div class="d-flex flex-wrap gap-2">
+                <a href="https://instagram.com" target="_blank" rel="noopener" class="contact-social-pill" aria-label="Follow NOURIPET on Instagram">
+                  <i class="bi bi-instagram text-danger"></i>
+                  <span>@nouripet</span>
+                </a>
+                <a href="https://facebook.com" target="_blank" rel="noopener" class="contact-social-pill" aria-label="Join NOURIPET Facebook Group">
+                  <i class="bi bi-facebook text-primary"></i>
+                  <span>Facebook</span>
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener" class="contact-social-pill" aria-label="Connect on LinkedIn">
+                  <i class="bi bi-linkedin text-info"></i>
+                  <span>LinkedIn</span>
+                </a>
+                <a href="https://youtube.com" target="_blank" rel="noopener" class="contact-social-pill" aria-label="Watch Pet Nutrition on YouTube">
+                  <i class="bi bi-youtube text-danger"></i>
+                  <span>YouTube</span>
+                </a>
+                <a href="https://twitter.com" target="_blank" rel="noopener" class="contact-social-pill" aria-label="Follow on X / Twitter">
+                  <i class="bi bi-twitter-x"></i>
+                  <span>@nouripet_care</span>
+                </a>
+                <a href="https://tiktok.com" target="_blank" rel="noopener" class="contact-social-pill" aria-label="Follow on TikTok">
+                  <i class="bi bi-tiktok"></i>
+                  <span>TikTok</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Knowledge Base CTA -->
             <div class="np-card p-4 bg-subtle" style="background-color: var(--bg-subtle);">
               <h5 class="fw-bold fs-6 mb-2">Frequently Answered Questions</h5>
               <p class="small text-muted mb-3">
@@ -255,19 +262,94 @@
   </section>
 
   <!-- ======================================================================
+       INTERACTIVE HEADQUARTERS MAP SECTION
+       ====================================================================== -->
+  <section class="pb-5 pt-2">
+    <div class="container">
+      <div class="np-card p-4 p-lg-5">
+        <div class="row align-items-center mb-4">
+          <div class="col-lg-8">
+            <div class="section-eyebrow"><i class="bi bi-geo-alt-fill text-success"></i> Visit Our Advisory Center</div>
+            <h3 class="fw-bold font-serif mb-2">Our Portland Headquarters & Clinical Hub</h3>
+            <p class="text-secondary mb-0">
+              Conveniently located in downtown Portland, Oregon. Scheduled clinical consultations, host specialist orientations, and nutrition testing lab.
+            </p>
+          </div>
+          <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+            <a href="https://maps.google.com/?q=742+Evergreen+Terrace+Portland+OR+97201" target="_blank" rel="noopener" class="btn btn-np-secondary btn-np-sm">
+              <i class="bi bi-compass me-1"></i> Get Directions in Google Maps
+            </a>
+          </div>
+        </div>
+
+        <div class="row g-4 align-items-stretch">
+          <div class="col-lg-8">
+            <div class="map-card-wrapper h-100" style="min-height: 380px;">
+              <iframe 
+                class="contact-map-frame h-100 w-100"
+                src="https://maps.google.com/maps?q=742%20Evergreen%20Terrace%20Portland%20OR%2097201&t=&z=14&ie=UTF8&iwloc=&output=embed" 
+                title="NOURIPET Headquarters Location Map"
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+          </div>
+          
+          <div class="col-lg-4">
+            <div class="p-4 rounded-4 h-100 d-flex flex-column justify-content-between" style="background-color: var(--bg-subtle); border: 1px solid var(--border-color);">
+              <div>
+                <h5 class="fw-bold mb-3 font-serif"><i class="bi bi-building me-2 text-forest"></i>Facility Information</h5>
+                
+                <div class="mb-3 small">
+                  <div class="fw-bold" style="color: var(--text-primary);">Address</div>
+                  <div class="text-secondary">742 Evergreen Terrace, Suite 300<br>Portland, OR 97201, USA</div>
+                </div>
+
+                <div class="mb-3 small">
+                  <div class="fw-bold" style="color: var(--text-primary);">Visiting Hours</div>
+                  <div class="text-secondary">Monday – Friday: 9:00 AM – 5:00 PM PST<br>Saturday: 10:00 AM – 2:00 PM (By Appointment)<br>Sunday: Closed</div>
+                </div>
+
+                <div class="mb-3 small">
+                  <div class="fw-bold" style="color: var(--text-primary);">Transit & Parking</div>
+                  <div class="text-secondary">Validated parking garage under building. 2-minute walk from Pioneer Square Transit Mall.</div>
+                </div>
+              </div>
+
+              <div class="pt-3 border-top" style="border-color: var(--border-color) !important;">
+                <span class="badge bg-success-subtle text-success p-2 w-100 text-center rounded-pill">
+                  <i class="bi bi-shield-check me-1"></i> Pet-Friendly Facility & Service Dogs Welcome
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
        FOOTER
        ====================================================================== -->
   <footer class="np-footer">
     <div class="container">
       <div class="row g-4">
         <div class="col-lg-4 col-md-6">
-          <div class="navbar-brand text-white mb-2">
+          <div class="navbar-brand mb-2">
             <span class="brand-leaf-icon"><i class="bi bi-heart-pulse-fill"></i></span>
             <span>NOURIPET</span>
           </div>
           <p class="small mb-3" style="color: var(--footer-text);">
             Better Nutrition. Happier Pets. The premier marketplace connecting conscientious pet guardians with certified animal dietitians and custom meal formulators.
           </p>
+          <div class="d-flex gap-2">
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="social-link-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="social-link-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-link-btn" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener" class="social-link-btn" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
         </div>
 
         <div class="col-lg-2 col-md-6 col-6">

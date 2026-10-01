@@ -55,11 +55,11 @@ a {
   transition: color var(--transition-fast);
 }
 
-[data-theme="dark"] a {
+[data-theme="dark"] a:not([class*="btn"]) {
   color: var(--color-sage);
 }
 
-a:hover {
+a:not([class*="btn"]):hover {
   color: var(--color-terracotta);
 }
 
@@ -176,86 +176,152 @@ img {
 }
 
 /* Custom Buttons */
-.btn-np-primary {
+.btn-np-primary,
+a.btn-np-primary,
+button.btn-np-primary,
+.btn.btn-np-primary {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 0.6rem;
-  background-color: var(--btn-primary-bg);
-  color: var(--btn-primary-text);
+  background-color: var(--btn-primary-bg) !important;
+  color: var(--btn-primary-text) !important;
   font-weight: 600;
   font-size: 0.95rem;
   padding: 0.75rem 1.6rem;
   border-radius: var(--radius-pill);
-  border: 1px solid transparent;
+  border: 1px solid transparent !important;
   transition: all var(--transition-fast);
   cursor: pointer;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
-.btn-np-primary:hover {
-  background-color: var(--btn-primary-hover);
-  color: var(--btn-primary-text);
+.btn-np-primary:hover,
+a.btn-np-primary:hover,
+button.btn-np-primary:hover,
+.btn.btn-np-primary:hover,
+.btn-np-primary:focus,
+a.btn-np-primary:focus,
+button.btn-np-primary:focus {
+  background-color: var(--btn-primary-hover) !important;
+  color: var(--btn-primary-text) !important;
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(20, 56, 44, 0.15);
+  box-shadow: 0 8px 20px rgba(20, 56, 44, 0.25);
+  text-decoration: none !important;
 }
 
-.btn-np-secondary {
+.btn-np-primary i,
+a.btn-np-primary i,
+button.btn-np-primary i,
+.btn.btn-np-primary i,
+.btn-np-primary span,
+a.btn-np-primary span,
+button.btn-np-primary span {
+  color: inherit !important;
+}
+
+.btn-np-secondary,
+a.btn-np-secondary,
+button.btn-np-secondary,
+.btn.btn-np-secondary {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 0.6rem;
-  background-color: var(--btn-secondary-bg);
-  color: var(--btn-secondary-text);
-  border: 1px solid var(--btn-secondary-border);
+  background-color: var(--btn-secondary-bg) !important;
+  color: var(--btn-secondary-text) !important;
+  border: 1px solid var(--btn-secondary-border) !important;
   font-weight: 600;
   font-size: 0.95rem;
   padding: 0.75rem 1.6rem;
   border-radius: var(--radius-pill);
   transition: all var(--transition-fast);
   cursor: pointer;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
-.btn-np-secondary:hover {
-  background-color: var(--btn-secondary-hover);
-  color: var(--btn-secondary-text);
+.btn-np-secondary:hover,
+a.btn-np-secondary:hover,
+button.btn-np-secondary:hover,
+.btn.btn-np-secondary:hover,
+.btn-np-secondary:focus,
+a.btn-np-secondary:focus,
+button.btn-np-secondary:focus {
+  background-color: var(--btn-secondary-hover) !important;
+  color: var(--btn-secondary-text) !important;
   transform: translateY(-2px);
-  border-color: var(--color-forest);
+  border-color: var(--color-forest) !important;
+  text-decoration: none !important;
 }
 
-.btn-np-accent {
+[data-theme="dark"] .btn-np-secondary:hover,
+[data-theme="dark"] a.btn-np-secondary:hover,
+[data-theme="dark"] button.btn-np-secondary:hover {
+  border-color: #588768 !important;
+}
+
+.btn-np-secondary i,
+a.btn-np-secondary i,
+button.btn-np-secondary i,
+.btn.btn-np-secondary i,
+.btn-np-secondary span,
+a.btn-np-secondary span,
+button.btn-np-secondary span {
+  color: inherit !important;
+}
+
+.btn-np-accent,
+a.btn-np-accent,
+button.btn-np-accent,
+.btn.btn-np-accent {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 0.6rem;
-  background-color: var(--btn-accent-bg);
-  color: var(--btn-accent-text);
+  background-color: var(--btn-accent-bg) !important;
+  color: var(--btn-accent-text) !important;
   font-weight: 600;
   font-size: 0.95rem;
   padding: 0.75rem 1.6rem;
   border-radius: var(--radius-pill);
-  border: 1px solid transparent;
+  border: 1px solid transparent !important;
   transition: all var(--transition-fast);
   cursor: pointer;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
-.btn-np-accent:hover {
-  background-color: var(--btn-accent-hover);
-  color: #FFFFFF;
+.btn-np-accent:hover,
+a.btn-np-accent:hover,
+button.btn-np-accent:hover,
+.btn.btn-np-accent:hover,
+.btn-np-accent:focus,
+a.btn-np-accent:focus,
+button.btn-np-accent:focus {
+  background-color: var(--btn-accent-hover) !important;
+  color: #FFFFFF !important;
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(200, 109, 81, 0.25);
+  text-decoration: none !important;
+}
+
+.btn-np-accent i,
+a.btn-np-accent i,
+button.btn-np-accent i,
+.btn.btn-np-accent i,
+.btn-np-accent span,
+a.btn-np-accent span,
+button.btn-np-accent span {
+  color: inherit !important;
 }
 
 .btn-np-sm {
-  padding: 0.45rem 1rem;
-  font-size: 0.85rem;
+  padding: 0.45rem 1rem !important;
+  font-size: 0.85rem !important;
 }
 
 .btn-np-lg {
-  padding: 0.95rem 2.2rem;
-  font-size: 1.05rem;
+  padding: 0.95rem 2.2rem !important;
+  font-size: 1.05rem !important;
 }
 
 /* Card Surface */
@@ -638,6 +704,11 @@ img {
   outline: none;
   cursor: pointer;
   width: 100%;
+}
+
+.search-field-select option {
+  background-color: var(--bg-surface);
+  color: var(--text-primary);
 }
 
 .search-divider {
@@ -1449,6 +1520,18 @@ img {
   margin-bottom: 0.75rem;
 }
 
+.np-footer .navbar-brand {
+  color: var(--footer-heading);
+}
+
+.np-footer .navbar-brand.text-white {
+  color: var(--footer-heading) !important;
+}
+
+.np-footer .text-white {
+  color: var(--footer-heading) !important;
+}
+
 .np-footer-links a {
   color: var(--footer-text);
   font-size: 0.92rem;
@@ -1456,6 +1539,11 @@ img {
 }
 
 .np-footer-links a:hover {
+  color: var(--color-forest);
+}
+
+[data-theme="dark"] .np-footer-links a:hover,
+[data-bs-theme="dark"] .np-footer-links a:hover {
   color: #FFFFFF;
 }
 
@@ -1464,22 +1552,98 @@ img {
   margin-top: 3.5rem;
   border-top: 1px solid var(--footer-border);
   font-size: 0.85rem;
+  color: var(--footer-text);
 }
 
 .social-link-btn {
-  width: 36px;
-  height: 36px;
+  width: 38px;
+  height: 38px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.08);
+  background: var(--color-sage-subtle, #F1F6F2);
+  border: 1px solid var(--border-color, #E6DFD6);
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: #FFFFFF;
+  color: var(--color-forest, #14382C);
   transition: all var(--transition-fast);
 }
 
 .social-link-btn:hover {
-  background: var(--color-sage);
-  color: #0E1714;
+  background: var(--color-forest);
+  color: #FFFFFF !important;
+  border-color: var(--color-forest);
   transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(20, 56, 44, 0.15);
 }
+
+[data-theme="dark"] .social-link-btn,
+[data-bs-theme="dark"] .social-link-btn {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.12);
+  color: #F4F6F4;
+}
+
+[data-theme="dark"] .social-link-btn:hover,
+[data-bs-theme="dark"] .social-link-btn:hover {
+  background: var(--color-sage);
+  color: #0E1714 !important;
+  border-color: var(--color-sage);
+}
+
+/* --------------------------------------------------------------------------
+   15. CONTACT PAGE ENHANCEMENTS (Social Badges & Map Section)
+   -------------------------------------------------------------------------- */
+.contact-social-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.55rem 0.9rem;
+  border-radius: var(--radius-pill);
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all var(--transition-fast);
+}
+
+.contact-social-pill i {
+  font-size: 1.15rem;
+  transition: transform var(--transition-fast);
+}
+
+.contact-social-pill:hover {
+  background-color: var(--color-sage-subtle);
+  border-color: var(--color-sage);
+  color: var(--color-forest);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(20, 56, 44, 0.08);
+}
+
+.contact-social-pill:hover i {
+  transform: scale(1.15);
+}
+
+[data-theme="dark"] .contact-social-pill:hover {
+  background-color: var(--bg-accent);
+  border-color: var(--color-sage);
+  color: #FFFFFF;
+}
+
+.contact-map-frame {
+  width: 100%;
+  height: 380px;
+  border: 0;
+  border-radius: var(--radius-lg);
+  display: block;
+}
+
+.map-card-wrapper {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--card-shadow);
+  border: 1px solid var(--border-color);
+}
+

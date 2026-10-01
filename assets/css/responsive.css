@@ -46,12 +46,17 @@ html, body {
 }
 
 /* --------------------------------------------------------------------------
-   Tablets & Mobile (Below 992px)
+   Tablets & Mobile (1024px and below)
    -------------------------------------------------------------------------- */
-@media (max-width: 991px) {
-  /* Navbar adjustments */
-  .np-desktop-nav {
+@media (max-width: 1024px) {
+  /* Navbar adjustments - enforce hamburger menu at 1024px */
+  .np-desktop-nav,
+  header.np-navbar .d-none.d-lg-flex {
     display: none !important;
+  }
+
+  header.np-navbar .d-flex.d-lg-none {
+    display: flex !important;
   }
 
   .np-mobile-toggle {
@@ -59,7 +64,33 @@ html, body {
     align-items: center;
     justify-content: center;
   }
+}
 
+/* 1024px Tablet / iPad view card alignments: 2 cards per row, last odd card centered */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .popular-services-grid > [class*="col-"],
+  .booking-steps-grid > [class*="col-"],
+  .food-categories-grid > [class*="col-"],
+  .customer-stories-grid > [class*="col-"],
+  #servicesGrid > [class*="col-"],
+  .service-card-wrapper {
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+    width: 50% !important;
+  }
+
+  .popular-services-grid,
+  .booking-steps-grid,
+  .food-categories-grid,
+  .customer-stories-grid,
+  #servicesGrid {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+  }
+}
+
+@media (max-width: 991px) {
   .section-padding {
     padding: 3.5rem 0;
   }

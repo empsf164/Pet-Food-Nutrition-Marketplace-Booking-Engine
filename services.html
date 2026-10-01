@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet Nutrition Services & Clinical Consultations — NOURIPET</title>
+  <meta name="description"
+    content="Explore board-certified pet nutrition services including custom fresh meal plans, clinical consultations, allergy protocols, and weight management.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="shortcut icon" href="assets/images/favicon.svg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap 5 & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="assets/css/theme.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+
+  <script src="assets/js/theme.js"></script>
+</head>
+
+<body>
+
+  <!-- ======================================================================
+       NAVBAR
+       ====================================================================== -->
+  <header class="np-navbar">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="index.html" class="navbar-brand">
+        <span class="brand-leaf-icon"><i class="bi bi-heart-pulse-fill"></i></span>
+        <span>NOURIPET</span>
+      </a>
+
+      <nav class="np-desktop-nav d-none d-lg-block" aria-label="Main Navigation">
+        <ul class="np-nav-links">
+          <li class="np-nav-item"><a href="index.html" class="np-nav-link">Home</a></li>
+          <li class="np-nav-item"><a href="marketplace.html" class="np-nav-link">Marketplace</a></li>
+          <li class="np-nav-item"><a href="services.html" class="np-nav-link active">Nutrition Services</a></li>
+          <li class="np-nav-item"><a href="resources.html" class="np-nav-link">Resources</a></li>
+          <li class="np-nav-item"><a href="about.html" class="np-nav-link">About</a></li>
+          <li class="np-nav-item"><a href="contact.html" class="np-nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="d-none d-lg-flex align-items-center gap-3">
+        <button type="button" class="theme-toggle-btn" aria-label="Toggle theme">
+          <i class="bi bi-moon-stars-fill"></i>
+        </button>
+        <a href="login.html" class="btn btn-np-secondary btn-np-sm">Login</a>
+        <a href="booking.html" class="btn btn-np-primary btn-np-sm">
+          <i class="bi bi-calendar2-check-fill me-1"></i> Book a Consultation
+        </a>
+      </div>
+
+      <div class="d-flex d-lg-none align-items-center gap-2">
+        <button type="button" class="theme-toggle-btn" aria-label="Toggle theme">
+          <i class="bi bi-moon-stars-fill"></i>
+        </button>
+        <button type="button" class="np-mobile-toggle" aria-label="Open mobile menu">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="np-mobile-backdrop"></div>
+  <aside class="np-mobile-menu">
+    <div class="d-flex align-items-center justify-content-between pb-3 border-bottom mb-3">
+      <a href="index.html" class="navbar-brand">
+        <span class="brand-leaf-icon"><i class="bi bi-heart-pulse-fill"></i></span>
+        <span>NOURIPET</span>
+      </a>
+      <button type="button" class="btn-close np-mobile-close" aria-label="Close"></button>
+    </div>
+    <ul class="list-unstyled d-flex flex-column gap-2 mb-4">
+      <li><a href="index.html" class="np-nav-link w-100">Home</a></li>
+      <li><a href="marketplace.html" class="np-nav-link w-100">Marketplace</a></li>
+      <li><a href="services.html" class="np-nav-link w-100 active">Nutrition Services</a></li>
+      <li><a href="resources.html" class="np-nav-link w-100">Resources</a></li>
+      <li><a href="about.html" class="np-nav-link w-100">About</a></li>
+      <li><a href="contact.html" class="np-nav-link w-100">Contact</a></li>
+    </ul>
+    <div class="mt-auto pt-3 border-top d-flex flex-column gap-2">
+      <a href="login.html" class="btn btn-np-secondary w-100 text-center">Login</a>
+      <a href="booking.html" class="btn btn-np-primary w-100 text-center">
+        <i class="bi bi-calendar2-check-fill me-1"></i> Book a Consultation
+      </a>
+    </div>
+  </aside>
+
+  <!-- ======================================================================
+       HERO SECTION
+       ====================================================================== -->
+  <section class="py-5 border-bottom text-center"
+    style="background: radial-gradient(circle at 10% 20%, var(--color-sage-subtle) 0%, transparent 60%);">
+    <div class="container py-3 py-md-4">
+      <div class="section-eyebrow mx-auto mb-2">
+        <i class="bi bi-patch-check-fill text-success"></i> Clinical Pet Care & Nutrition
+      </div>
+      <h1 class="display-4 fw-bold font-serif mb-3">Specialized Pet Nutrition Services</h1>
+      <p class="text-secondary lead mx-auto mb-4" style="max-width: 760px;">
+        Empower your pet's longevity with evidence-based nutrition plans, custom home-cooked formulations, and clinical
+        consultations designed by board-certified specialists.
+      </p>
+
+      <!-- Category Filter Pills -->
+      <div class="d-flex flex-wrap justify-content-center gap-2 mt-4" id="serviceCategories">
+        <button type="button" class="btn btn-np-primary btn-sm rounded-pill px-3 active-cat-btn" data-cat="all">All
+          Services</button>
+        <button type="button" class="btn btn-np-secondary btn-sm rounded-pill px-3" data-cat="consultation">Clinical
+          Consultations</button>
+        <button type="button" class="btn btn-np-secondary btn-sm rounded-pill px-3" data-cat="meal-plan">Custom Meal
+          Plans</button>
+        <button type="button" class="btn btn-np-secondary btn-sm rounded-pill px-3" data-cat="allergy">Allergy & Gut
+          Health</button>
+        <button type="button" class="btn btn-np-secondary btn-sm rounded-pill px-3" data-cat="weight">Weight
+          Management</button>
+        <button type="button" class="btn btn-np-secondary btn-sm rounded-pill px-3" data-cat="pediatric">Puppy & Kitten
+          Growth</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       SERVICES CATALOG GRID
+       ====================================================================== -->
+  <section class="py-5" style="background-color: var(--color-bg-secondary, #f8f9fa);">
+    <div class="container py-3">
+      <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-2">
+        <div>
+          <h2 class="h4 fw-bold mb-1">Available Programs & Consultations</h2>
+          <p class="text-muted small mb-0" id="servicesCounter">Showing 6 certified nutrition services</p>
+        </div>
+        <div class="d-flex align-items-center gap-2">
+          <label for="sortServices" class="small fw-semibold text-muted text-nowrap">Sort by:</label>
+          <select id="sortServices" class="form-select form-select-sm" style="width: auto;">
+            <option value="featured">Featured First</option>
+            <option value="price-low">Price: Low to High</option>
+            <option value="price-high">Price: High to Low</option>
+            <option value="rating">Highest Rated</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row g-4 justify-content-center" id="servicesGrid">
+        <!-- Service Card 1 -->
+        <div class="col-md-6 col-lg-4 service-card-wrapper" data-cat="consultation" data-price="120" data-rating="4.9">
+          <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden service-card-hover">
+            <div class="position-relative">
+              <img src="https://images.unsplash.com/photo-1548767797-d8c844163c4c?auto=format&fit=crop&w=600&q=80"
+                class="card-img-top" alt="Personalized Pet Nutrition Consultation"
+                style="height: 200px; object-fit: cover;">
+              <span class="badge bg-success position-absolute top-0 end-0 m-3 px-3 py-2 rounded-pill shadow-sm">Most
+                Popular</span>
+            </div>
+            <div class="card-body d-flex flex-column p-4">
+              <div class="d-flex align-items-center gap-2 mb-2 text-warning small fw-bold">
+                <i class="bi bi-star-fill"></i> 4.9 <span class="text-muted font-normal">(142 reviews)</span>
+              </div>
+              <h3 class="h5 card-title fw-bold mb-2">
+                <a href="service-details.html" class="text-decoration-none text-dark hover-primary">Personalized Pet
+                  Nutrition</a>
+              </h3>
+              <p class="card-text text-secondary small mb-3 flex-grow-1">
+                A thorough 45-minute clinical assessment of your pet's current diet, Body Condition Score (BCS), medical
+                history, and caloric needs with recommendations.
+              </p>
+              <ul class="list-unstyled small text-muted mb-4 gap-2 d-flex flex-column">
+                <li class="d-flex align-items-center gap-2"><i class="bi bi-clock-history text-primary"></i> 45 Minutes
+                  Consultation</li>
+                <li class="d-flex align-items-center gap-2"><i class="bi bi-camera-video-fill text-primary"></i> Live
+                  Telehealth or In-Clinic</li>
+                <li class="d-flex align-items-center gap-2"><i class="bi bi-file-earmark-medical-fill text-primary"></i>
+                  Personalized Diet Blueprint PDF</li>
+              </ul>
+              <div class="pt-3 border-top d-flex align-items-center justify-content-between mt-auto">
+                <div>
+                  <span class="fs-4 fw-bold text-success">$120</span>
+                  <span class="text-muted small"> / session</span>
+                </div>
+                <div class="d-flex gap-2">
+                  <a href="service-details.html" class="btn btn-outline-secondary btn-sm rounded-pill px-3">Details</a>
+                  <a href="booking.html?service=consultation" class="btn btn-np-primary btn-sm rounded-pill px-3">Book
+                    Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Card 2 -->
+        <div class="col-md-6 col-lg-4 service-card-wrapper" data-cat="meal-plan" data-price="185" data-rating="5.0">
+          <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden service-card-hover">
+            <div class="position-relative">
+              <img src="https://images.unsplash.com/photo-1589924691995-400dc9ecc119?auto=format&fit=crop&w=600&q=80"
+                class="card-img-top" alt="Personalized Fresh & Raw Meal Formulation"
+                style="height: 200px; object-fit: cover;">
+              <span class="badge bg-primary position-absolute top-0 end-0 m-3 px-3 py-2 rounded-pill shadow-sm">Custom
+                Recipe</span>
+            </div>
+            <div class="card-body d-flex flex-column p-4">
+              <div class="d-flex align-items-center gap-2 mb-2 text-warning small fw-bold">
+                <i class="bi bi-star-fill"></i> 5.0 <span class="text-muted font-normal">(98 reviews)</span>
+              </div>
+              <h3 class="h5 card-title fw-bold mb-2">
+                <a href="service-details.html" class="text-decoration-none text-dark hover-primary">Personalized Fresh &
+                  Raw Meal</a>
+              </h3>
+              <p class="card-text text-secondary small mb-3 flex-grow-1">
+                Custom home-cooked or raw feeding recipes computer-formulated by nutritionists to meet exact AAFCO &
+                FEDIAF nutrient profiles for your pet.
+              </p>
+              <ul class="list-unstyled small text-muted mb-4 gap-2 d-flex flex-column">
+                <li class="d-flex align-items-center gap-2"><i class="bi bi-pie-chart-fill text-primary"></i> Precise
+                  Macro & Micronutrient Ratios</li>
+                <li class="d-flex align-items-center gap-2"><i class="bi bi-basket-fill text-primary"></i> Easy Grocery
+                  & Supplement Prep Sheets</li>
+                <li class="d-flex align-items-center gap-2"><i class="bi bi-arrow-repeat text-primary"></i> 30 Days
+                  Email Recipe Adjustments</li>
+              </ul>
+              <div class="pt-3 border-top d-flex align-items-center justify-content-between mt-auto">
+                <div>
+                  <span class="fs-4 fw-bold text-success">$185</span>
+                  <span class="text-muted small"> / plan</span>
+                </div>
+                <div class="d-flex gap-2">
+                  <a href="service-details.html" class="btn btn-outline-secondary btn-sm rounded-pill px-3">Details</a>
+                  <a href="booking.html?service=meal-plan" class="btn btn-np-primary btn-sm rounded-pill px-3">Book
+                    Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Card 3 -->
+        <div class="col-md-6 col-lg-4 service-card-wrapper" data-cat="consultation" data-price="75" data-rating="4.8">
+          <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden service-card-hover">
+            <div class="position-relative">
+              <img src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?auto=format&fit=crop&w=600&q=80"
+                class="card-img-top" alt="Commercial Food & Ingredient Audit" style="height: 200px; object-fit: cover;">
+              <span
+                class="badge bg-info text-dark position-absolute top-0 end-0 m-3 px-3 py-2 rounded-pill shadow-sm">Kibble
+                & Canned</span>
+            </div>
+            <div class="card-body d-flex flex-column p-4">
+              <div class="d-flex align-items-center gap-2 mb-2 text-warning small fw-bold">
+                <i class="bi bi-star-fill"></i> 4.8 <span class="text-muted font-normal">(67 reviews)</span>
+              </div>
+              <h3 class="h5 card-title fw-bold mb-2">
+                <a href="service-details.html" class="text-decoration-none text-dark hover-primary">Commercial Food &
+                  Ingredient</a>
+              </h3>
+              <p class="card-text text-secondary small mb-3 flex-grow-1">
+                Objective evaluation of your current commercial brand kibble, wet food, or toppers to identify fillers,
+                heavy metals, recall records, and quality scores.
+              </p>
+              <ul class="list-unstyled small text-muted mb-4 gap-2 d-flex flex-column">
+                <li class="d-flex align-items-center gap-2"><i class="bi bi-shield-check text-primary"></i> Ingredient
+                  Quality & Sourcing Breakdown</li>
+                <li class="d-flex align-items-center gap-2"><i class="bi bi-search text-primary"></i> Guaranteed
+                  Analysis Verification</li>
+                <li class="d-flex align-items-center gap-2"><i class="bi bi-bag-check-fill text-primary"></i> Top 3
+                  Healthy Brand Alternatives</li>
+              </ul>
+              <div class="pt-3 border-top d-flex align-items-center justify-content-between mt-auto">
+                <div>
+                  <span class="fs-4 fw-bold text-success">$75</span>
+                  <span class="text-muted small"> / audit</span>
+                </div>
+                <div class="d-flex gap-2">
+                  <a href="service-details.html" class="btn btn-outline-secondary btn-sm rounded-pill px-3">Details</a>
+                  <a href="booking.html?service=food-audit" class="btn btn-np-primary btn-sm rounded-pill px-3">Book
+                    Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Card 4 -->
+        <div class="col-md-6 col-lg-4 service-card-wrapper" data-cat="allergy" data-price="210" data-rating="4.9">
+          <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden service-card-hover">
+            <div class="position-relative">
+              <img src="https://images.unsplash.com/photo-1576201836106-db1758fd1c97?auto=format&fit=crop&w=600&q=80"
+                class="card-img-top" alt="Allergy & Gut Microbiome Protocol" style="height: 200px; object-fit: cover;">
+              <span
+                class="badge bg-warning text-dark position-absolute top-0 end-0 m-3 px-3 py-2 rounded-pill shadow-sm">Clinical
+                Therapy</span>
+            </div>
+            <div class="card-body d-flex flex-column p-4">
+              <div class="d-flex align-items-center gap-2 mb-2 text-warning small fw-bold">
+                <i class="bi bi-star-fill"></i> 4.9 <span class="text-muted font-normal">(114 reviews)</span>
+              </div>
+              <h3 class="h5 card-title fw-bold mb-2">
+                <a href="service-details.html" class="text-decoration-none text-dark hover-primary">Allergy & Gut
+                  Elimination Protocol</a>
+              </h3>
+              <p class="card-text text-secondary small mb-3 flex-grow-1">
+                Targeted dietary elimination strategy to relieve chronic paw licking, skin inflammation, ear infections,
+                IBD, and gut dysbiosis under medical guidance.
+              </p>
+              <ul class="list-unstyled small text-muted mb-4 gap-2 d-flex flex-column">
+                <li class="d-flex align-items-center gap-2"><i class="bi bi-virus text-primary"></i> Novel Protein &
+                  Hydrolyzed Food Mapping</li>
+                <li class="d-flex align-items-center gap-2"><i class="bi bi-activity text-primary"></i> Gut Microbiome &
+                  Probiotic Regimen</li>
+                <li class="d-flex align-items-center gap-2"><i class="bi bi-calendar-range-fill text-primary"></i>
+                  8-Week Guided Elimination Schedule</li>
+              </ul>
+              <div class="pt-3 border-top d-flex align-items-center justify-content-between mt-auto">
+                <div>
+                  <span class="fs-4 fw-bold text-success">$210</span>
+                  <span class="text-muted small"> / protocol</span>
+                </div>
+                <div class="d-flex gap-2">
+                  <a href="service-details.html" class="btn btn-outline-secondary btn-sm rounded-pill px-3">Details</a>
+                  <a href="booking.html?service=allergy" class="btn btn-np-primary btn-sm rounded-pill px-3">Book
+                    Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Card 5 -->
+        <div class="col-md-6 col-lg-4 service-card-wrapper" data-cat="weight" data-price="140" data-rating="4.9">
+          <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden service-card-hover">
+            <div class="position-relative">
+              <img src="https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?auto=format&fit=crop&w=600&q=80"
+                class="card-img-top" alt="Metabolic Weight Management Plan" style="height: 200px; object-fit: cover;">
+              <span class="badge bg-secondary position-absolute top-0 end-0 m-3 px-3 py-2 rounded-pill shadow-sm">Weight
+                Loss</span>
+            </div>
+            <div class="card-body d-flex flex-column p-4">
+              <div class="d-flex align-items-center gap-2 mb-2 text-warning small fw-bold">
+                <i class="bi bi-star-fill"></i> 4.9 <span class="text-muted font-normal">(85 reviews)</span>
+              </div>
+              <h3 class="h5 card-title fw-bold mb-2">
+                <a href="service-details.html" class="text-decoration-none text-dark hover-primary">Metabolic Weight
+                  Management Protocol</a>
+              </h3>
+              <p class="card-text text-secondary small mb-3 flex-grow-1">
+                A safe, science-backed weight reduction program designed to protect lean muscle tissue, enhance joint
+                health, and reverse metabolic dysfunction.
+              </p>
+              <ul class="list-unstyled small text-muted mb-4 gap-2 d-flex flex-column">
+                <li class="d-flex align-items-center gap-2"><i class="bi bi-speedometer2 text-primary"></i> Basal
+                  Metabolic Rate (BMR) Calculation</li>
+                <li class="d-flex align-items-center gap-2"><i class="bi bi-graph-down-arrow text-primary"></i>
+                  Bi-Weekly Target Weight Milestones</li>
+                <li class="d-flex align-items-center gap-2"><i class="bi bi-heart-pulse-fill text-primary"></i> Joint
+                  Support Supplementation Guide</li>
+              </ul>
+              <div class="pt-3 border-top d-flex align-items-center justify-content-between mt-auto">
+                <div>
+                  <span class="fs-4 fw-bold text-success">$140</span>
+                  <span class="text-muted small"> / plan</span>
+                </div>
+                <div class="d-flex gap-2">
+                  <a href="service-details.html" class="btn btn-outline-secondary btn-sm rounded-pill px-3">Details</a>
+                  <a href="booking.html?service=weight" class="btn btn-np-primary btn-sm rounded-pill px-3">Book Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Card 6 -->
+        <div class="col-md-6 col-lg-4 service-card-wrapper" data-cat="pediatric" data-price="130" data-rating="5.0">
+          <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden service-card-hover">
+            <div class="position-relative">
+              <img src="https://images.unsplash.com/photo-1596492784531-6e6eb5ea9993?auto=format&fit=crop&w=600&q=80"
+                class="card-img-top" alt="Puppy & Kitten Optimal Growth Nutrition"
+                style="height: 200px; object-fit: cover;">
+              <span
+                class="badge bg-success position-absolute top-0 end-0 m-3 px-3 py-2 rounded-pill shadow-sm">Pediatric
+                Care</span>
+            </div>
+            <div class="card-body d-flex flex-column p-4">
+              <div class="d-flex align-items-center gap-2 mb-2 text-warning small fw-bold">
+                <i class="bi bi-star-fill"></i> 5.0 <span class="text-muted font-normal">(53 reviews)</span>
+              </div>
+              <h3 class="h5 card-title fw-bold mb-2">
+                <a href="service-details.html" class="text-decoration-none text-dark hover-primary">Puppy & Kitten
+                  Growth Nutrition Plan</a>
+              </h3>
+              <p class="card-text text-secondary small mb-3 flex-grow-1">
+                Precision calcium-phosphorus ratio balancing and caloric scaling to support skeletal, brain, and immune
+                development during critical growth phases.
+              </p>
+              <ul class="list-unstyled small text-muted mb-4 gap-2 d-flex flex-column">
+                <li class="d-flex align-items-center gap-2"><i class="bi bi-bounding-box-circles text-primary"></i>
+                  Large Breed vs Small Breed Growth Scaling</li>
+                <li class="d-flex align-items-center gap-2"><i class="bi bi-cup-hot-fill text-primary"></i> Weaning &
+                  Transition Guidance</li>
+                <li class="d-flex align-items-center gap-2"><i class="bi bi-file-earmark-check-fill text-primary"></i>
+                  Monthly Calorie Revision Chart</li>
+              </ul>
+              <div class="pt-3 border-top d-flex align-items-center justify-content-between mt-auto">
+                <div>
+                  <span class="fs-4 fw-bold text-success">$130</span>
+                  <span class="text-muted small"> / plan</span>
+                </div>
+                <div class="d-flex gap-2">
+                  <a href="service-details.html" class="btn btn-outline-secondary btn-sm rounded-pill px-3">Details</a>
+                  <a href="booking.html?service=puppy" class="btn btn-np-primary btn-sm rounded-pill px-3">Book Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       WHY CHOOSE CLINICAL NUTRITIONISTS
+       ====================================================================== -->
+  <section class="py-5 bg-white">
+    <div class="container py-3">
+      <div class="text-center mb-5 max-w-700 mx-auto">
+        <span class="badge bg-success-subtle text-success px-3 py-2 rounded-pill fw-bold mb-2">The NOURIPET
+          Standard</span>
+        <h2 class="display-6 fw-bold font-serif">Why Work With Board-Certified Nutritionists?</h2>
+        <p class="text-secondary">Commercial pet foods often provide minimum baseline nutrition, but individual pets
+          have unique metabolic, genetic, and environmental needs.</p>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-6 col-lg-4">
+          <div class="p-4 rounded-4 bg-light border h-100 text-center">
+            <div
+              class="bg-success text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+              style="width: 56px; height: 56px;">
+              <i class="bi bi-file-earmark-spreadsheet-fill fs-4"></i>
+            </div>
+            <h3 class="h5 fw-bold mb-2">Evidence-Based Formulas</h3>
+            <p class="text-secondary small mb-0">Every diet plan is grounded in peer-reviewed veterinary nutrition
+              science, balancing protein, fats, and essential minerals down to the microgram.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="p-4 rounded-4 bg-light border h-100 text-center">
+            <div
+              class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+              style="width: 56px; height: 56px;">
+              <i class="bi bi-shield-fill-check fs-4"></i>
+            </div>
+            <h3 class="h5 fw-bold mb-2">AAFCO & FEDIAF Compliant</h3>
+            <p class="text-secondary small mb-0">Custom meal recipes meet or exceed international pet food safety and
+              nutritional adequacy guidelines for growth, adult maintenance, or senior care.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="p-4 rounded-4 bg-light border h-100 text-center">
+            <div
+              class="bg-warning text-dark rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+              style="width: 56px; height: 56px;">
+              <i class="bi bi-headset fs-4"></i>
+            </div>
+            <h3 class="h5 fw-bold mb-2">Ongoing Clinical Support</h3>
+            <p class="text-secondary small mb-0">Enjoy direct messaging access with your dedicated specialist to monitor
+              weight changes, digestive adaptation, and energy levels.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       SERVICE COMPARISON TABLE
+       ====================================================================== -->
+  <section class="py-5" style="background-color: var(--color-bg-secondary, #f8f9fa);">
+    <div class="container py-3">
+      <div class="text-center mb-5 max-w-700 mx-auto">
+        <h2 class="display-6 fw-bold font-serif mb-2">Compare Service Features</h2>
+        <p class="text-secondary">Find the right level of nutritional support for your pet's health goals.</p>
+      </div>
+
+      <div class="table-responsive rounded-4 shadow-sm bg-white p-3 p-md-4 border">
+        <table class="table table-hover align-middle mb-0">
+          <thead>
+            <tr class="border-bottom">
+              <th scope="col" class="py-3 fs-6" style="width: 40%;">Service Inclusion</th>
+              <th scope="col" class="py-3 text-center fs-6" style="width: 20%;">Ingredient Audit ($75)</th>
+              <th scope="col" class="py-3 text-center fs-6 text-success" style="width: 20%;">Clinical Consultation
+                ($120)</th>
+              <th scope="col" class="py-3 text-center fs-6 text-primary" style="width: 20%;">Custom Recipe Plan ($185)
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="fw-semibold text-dark py-3">45-Minute Telehealth Video Session</td>
+              <td class="text-center text-muted"><i class="bi bi-dash"></i> (30m Call)</td>
+              <td class="text-center text-success"><i class="bi bi-check-circle-fill"></i></td>
+              <td class="text-center text-primary"><i class="bi bi-check-circle-fill"></i></td>
+            </tr>
+            <tr>
+              <td class="fw-semibold text-dark py-3">Full Dietary & Medical History Review</td>
+              <td class="text-center text-muted"><i class="bi bi-dash"></i></td>
+              <td class="text-center text-success"><i class="bi bi-check-circle-fill"></i></td>
+              <td class="text-center text-primary"><i class="bi bi-check-circle-fill"></i></td>
+            </tr>
+            <tr>
+              <td class="fw-semibold text-dark py-3">Custom Home-Cooked / Raw Recipe Formulation</td>
+              <td class="text-center text-muted"><i class="bi bi-dash"></i></td>
+              <td class="text-center text-muted"><i class="bi bi-dash"></i></td>
+              <td class="text-center text-primary"><i class="bi bi-check-circle-fill"></i></td>
+            </tr>
+            <tr>
+              <td class="fw-semibold text-dark py-3">Commercial Food & Ingredient Safety Scoring</td>
+              <td class="text-center text-success"><i class="bi bi-check-circle-fill"></i></td>
+              <td class="text-center text-success"><i class="bi bi-check-circle-fill"></i></td>
+              <td class="text-center text-primary"><i class="bi bi-check-circle-fill"></i></td>
+            </tr>
+            <tr>
+              <td class="fw-semibold text-dark py-3">AAFCO / FEDIAF Nutrient Balance Certificate</td>
+              <td class="text-center text-muted"><i class="bi bi-dash"></i></td>
+              <td class="text-center text-muted"><i class="bi bi-dash"></i></td>
+              <td class="text-center text-primary"><i class="bi bi-check-circle-fill"></i></td>
+            </tr>
+            <tr>
+              <td class="fw-semibold text-dark py-3">Follow-up Support & Recipe Adjustments</td>
+              <td class="text-center text-muted"><i class="bi bi-dash"></i></td>
+              <td class="text-center text-success"><i class="bi bi-check-circle-fill"></i> (14 Days)</td>
+              <td class="text-center text-primary"><i class="bi bi-check-circle-fill"></i> (30 Days)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       FREQUENTLY ASKED QUESTIONS
+       ====================================================================== -->
+  <section class="py-5 bg-white">
+    <div class="container py-3 max-w-800">
+      <div class="text-center mb-5">
+        <h2 class="display-6 fw-bold font-serif mb-2">Frequently Asked Questions</h2>
+        <p class="text-secondary">Everything you need to know about booking and preparing for a consultation.</p>
+      </div>
+
+      <div class="accordion accordion-flush rounded-4 shadow-sm border p-2" id="faqAccordion">
+        <div class="accordion-item border-bottom">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button fw-bold text-dark collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              How do virtual video consultations work?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body text-secondary small">
+              After booking your session on NOURIPET, you will receive a secure video link via email. During the
+              45-minute video call, your specialist will discuss your pet's lifestyle, review their body condition,
+              answer questions, and formulate a customized action plan.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item border-bottom">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button fw-bold text-dark collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Do I need veterinary bloodwork or medical records prior to the session?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body text-secondary small">
+              While recent bloodwork is not mandatory for healthy pets, it is highly recommended if your pet suffers
+              from chronic kidney disease, pancreatitis, diabetes, or severe allergies. You can upload existing lab
+              results directly during the booking checkout.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item border-bottom">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button fw-bold text-dark collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Are home-cooked recipes balanced for long-term feeding?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body text-secondary small">
+              Yes! All our custom recipes are formulated using professional veterinary software to ensure complete
+              compliance with AAFCO and FEDIAF nutritional requirements. We specify exact weights for proteins,
+              vegetables, calcium sources, and essential vitamin premixes.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button fw-bold text-dark collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              What if my pet is a picky eater and refuses the new meal plan?
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body text-secondary small">
+              We offer 30 days of complimentary recipe modifications with every custom plan. If your pet dislikes
+              specific ingredients, your specialist will adjust the recipe with alternative protein or fiber sources
+              without compromising nutritional balance.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       CTA CALLOUT
+       ====================================================================== -->
+  <section class="py-5 text-white" style="background: linear-gradient(135deg, #1b3b2b 0%, #2c5e43 100%);">
+    <div class="container text-center py-4">
+      <h2 class="display-6 font-serif fw-bold mb-3 text-white">Give Your Pet the Life They Deserve</h2>
+      <p class="lead mb-4 mx-auto text-white-50" style="max-width: 650px;">
+        Schedule a 1-on-1 consultation with a certified nutritionist today and receive a personalized diet roadmap
+        within 48 hours.
+      </p>
+      <div class="d-flex justify-content-center gap-3 flex-wrap">
+        <a href="booking.html" class="btn btn-np-primary btn-lg rounded-pill px-4">
+          <i class="bi bi-calendar2-check-fill me-2"></i> Book Consultation Now
+        </a>
+        <a href="contact.html" class="btn btn-outline-light btn-lg rounded-pill px-4">
+          Have Questions? Contact Us
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       FOOTER
+       ====================================================================== -->
+  <footer class="np-footer">
+    <div class="container">
+      <div class="row g-4 mb-5">
+        <div class="col-lg-4 col-md-6">
+          <a href="index.html" class="footer-brand d-inline-flex align-items-center gap-2 mb-3">
+            <span class="brand-leaf-icon"><i class="bi bi-heart-pulse-fill text-success"></i></span>
+            <span class="fw-bold fs-4 tracking-tight">NOURIPET</span>
+          </a>
+          <p class="footer-text mb-4">
+            The premier marketplace for pet food transparency and clinical pet nutrition booking. Connecting pet parents
+            with certified nutritionists worldwide.
+          </p>
+          <div class="footer-social-links">
+            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6">
+          <h5 class="footer-title">Explore</h5>
+          <ul class="footer-links">
+            <li><a href="marketplace.html">Marketplace</a></li>
+            <li><a href="services.html">Nutrition Services</a></li>
+            <li><a href="resources.html">Resources & Blog</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-title">Services</h5>
+          <ul class="footer-links">
+            <li><a href="service-details.html">Clinical Consultation</a></li>
+            <li><a href="service-details.html">Custom Meal Planning</a></li>
+            <li><a href="service-details.html">Ingredient Audit</a></li>
+            <li><a href="service-details.html">Allergy Elimination Protocol</a></li>
+            <li><a href="service-details.html">Weight Management</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-title">Stay Informed</h5>
+          <p class="footer-text mb-3">Subscribe to our newsletter for pet nutrition tips and specialist updates.</p>
+          <form class="d-flex gap-2" onsubmit="event.preventDefault(); alert('Subscribed to NOURIPET Newsletter!');">
+            <input type="email" class="form-control form-control-sm rounded-pill px-3" placeholder="Enter your email"
+              required>
+            <button type="submit" class="btn btn-np-primary btn-sm rounded-pill px-3">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom border-top pt-4 text-center">
+        <p class="mb-0 text-muted small">&copy; 2026 NOURIPET Marketplace Inc. All rights reserved. Made with care for
+          pets everywhere.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Filter & Sort JS Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const catButtons = document.querySelectorAll('#serviceCategories button');
+      const cards = document.querySelectorAll('.service-card-wrapper');
+      const counter = document.getElementById('servicesCounter');
+      const sortSelect = document.getElementById('sortServices');
+      const grid = document.getElementById('servicesGrid');
+
+      catButtons.forEach(btn => {
+        btn.addEventListener('click', function () {
+          catButtons.forEach(b => {
+            b.classList.remove('btn-np-primary', 'active-cat-btn');
+            b.classList.add('btn-np-secondary');
+          });
+          this.classList.remove('btn-np-secondary');
+          this.classList.add('btn-np-primary', 'active-cat-btn');
+
+          const cat = this.getAttribute('data-cat');
+          let count = 0;
+
+          cards.forEach(card => {
+            if (cat === 'all' || card.getAttribute('data-cat') === cat) {
+              card.style.display = 'block';
+              count++;
+            } else {
+              card.style.display = 'none';
+            }
+          });
+
+          counter.textContent = `Showing ${count} certified nutrition services`;
+        });
+      });
+
+      if (sortSelect) {
+        sortSelect.addEventListener('change', function () {
+          const val = this.value;
+          const cardArray = Array.from(cards);
+
+          cardArray.sort((a, b) => {
+            if (val === 'price-low') {
+              return parseFloat(a.dataset.price) - parseFloat(b.dataset.price);
+            } else if (val === 'price-high') {
+              return parseFloat(b.dataset.price) - parseFloat(a.dataset.price);
+            } else if (val === 'rating') {
+              return parseFloat(b.dataset.rating) - parseFloat(a.dataset.rating);
+            }
+            return 0; // default featured order
+          });
+
+          cardArray.forEach(card => grid.appendChild(card));
+        });
+      }
+    });
+  </script>
+</body>
+
+</html>
