@@ -1,0 +1,174 @@
+/* ==========================================================================
+   NOURIPET — THEME & DESIGN SYSTEM TOKENS
+   Deep Forest Green, Soft Sage, Warm Cream, Charcoal, Terracotta & Sand
+   Light & Dark Mode Variables
+   ========================================================================== */
+
+:root {
+  /* Brand Typography */
+  --font-primary: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-serif: 'DM Serif Display', Georgia, serif;
+  --font-mono: 'Space Grotesk', monospace, sans-serif;
+
+  /* Color Palette — Brand Core */
+  --color-forest: #14382C;
+  --color-forest-dark: #0E2820;
+  --color-forest-deep: #091C16;
+  --color-forest-light: #1D4F3E;
+  
+  --color-sage: #6B8B75;
+  --color-sage-light: #E4ECE6;
+  --color-sage-subtle: #F1F6F2;
+  --color-sage-hover: #587561;
+
+  --color-terracotta: #C86D51;
+  --color-terracotta-light: #FBF0EC;
+  --color-terracotta-hover: #B55B40;
+
+  --color-sand: #EADFCF;
+  --color-sand-light: #FAF6EF;
+  --color-amber: #D9822B;
+  --color-amber-light: #FEF7EE;
+
+  /* Light Mode Semantics (Default) */
+  --bg-primary: #FAF8F5;
+  --bg-surface: #FFFFFF;
+  --bg-surface-elevated: #FFFFFF;
+  --bg-subtle: #F4EFEB;
+  --bg-muted: #ECE5DE;
+  --bg-accent: #EBF2ED;
+
+  --text-primary: #18221D;
+  --text-secondary: #4A564F;
+  --text-muted: #748279;
+  --text-inverse: #FAF8F5;
+
+  --border-color: #E6DFD6;
+  --border-color-subtle: #EFE9E2;
+  --border-color-focus: #14382C;
+
+  --nav-bg: rgba(250, 248, 245, 0.92);
+  --nav-border: rgba(20, 56, 44, 0.08);
+
+  --card-bg: #FFFFFF;
+  --card-border: #EADBCE;
+  --card-hover-border: #6B8B75;
+  --card-shadow: 0 4px 20px rgba(20, 56, 44, 0.04);
+  --card-shadow-hover: 0 12px 30px rgba(20, 56, 44, 0.09);
+
+  --badge-bg: #EAF1EC;
+  --badge-text: #14382C;
+
+  --btn-primary-bg: #14382C;
+  --btn-primary-text: #FAF8F5;
+  --btn-primary-hover: #0E2820;
+
+  --btn-secondary-bg: #FAF8F5;
+  --btn-secondary-text: #14382C;
+  --btn-secondary-border: #D5CCC1;
+  --btn-secondary-hover: #EFE9DF;
+
+  --btn-accent-bg: #C86D51;
+  --btn-accent-text: #FFFFFF;
+  --btn-accent-hover: #B55B40;
+
+  --input-bg: #FFFFFF;
+  --input-border: #D6CBC0;
+  --input-text: #18221D;
+  --input-placeholder: #8C9991;
+  --input-focus-border: #14382C;
+  --input-focus-ring: rgba(20, 56, 44, 0.15);
+
+  --slot-avail-bg: #FFFFFF;
+  --slot-avail-border: #D5CCC1;
+  --slot-avail-text: #18221D;
+  --slot-selected-bg: #14382C;
+  --slot-selected-text: #FFFFFF;
+  --slot-disabled-bg: #F1ECE6;
+  --slot-disabled-text: #A69E96;
+
+  --footer-bg: #0E2820;
+  --footer-text: #CBD5CE;
+  --footer-heading: #FAF8F5;
+  --footer-border: rgba(255, 255, 255, 0.1);
+
+  /* Radius & Transitions */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-pill: 9999px;
+
+  --transition-fast: 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-base: 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-smooth: 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ==========================================================================
+   DARK MODE PALETTE
+   High Contrast, Sophisticated Forest-Charcoal, Crisp Typography
+   ========================================================================== */
+
+[data-theme="dark"],
+[data-bs-theme="dark"] {
+  --bg-primary: #0F1714;
+  --bg-surface: #15221D;
+  --bg-surface-elevated: #1B2B25;
+  --bg-subtle: #121E19;
+  --bg-muted: #1A2822;
+  --bg-accent: #1D332B;
+
+  --text-primary: #F4F6F4;
+  --text-secondary: #BDC8C1;
+  --text-muted: #829288;
+  --text-inverse: #0F1714;
+
+  --border-color: #24352D;
+  --border-color-subtle: #1C2B24;
+  --border-color-focus: #7C9A84;
+
+  --nav-bg: rgba(15, 23, 20, 0.94);
+  --nav-border: rgba(255, 255, 255, 0.08);
+
+  --card-bg: #15221D;
+  --card-border: #23342C;
+  --card-hover-border: #4A6E55;
+  --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+  --card-shadow-hover: 0 12px 30px rgba(0, 0, 0, 0.55);
+
+  --badge-bg: #1B2E25;
+  --badge-text: #A6CBB3;
+
+  --btn-primary-bg: #7C9A84;
+  --btn-primary-text: #0B1410;
+  --btn-primary-hover: #91B19A;
+
+  --btn-secondary-bg: #17241E;
+  --btn-secondary-text: #E5EDE7;
+  --btn-secondary-border: #2B3D34;
+  --btn-secondary-hover: #21332A;
+
+  --btn-accent-bg: #D47A60;
+  --btn-accent-text: #0E1714;
+  --btn-accent-hover: #E08C74;
+
+  --input-bg: #121E19;
+  --input-border: #283C32;
+  --input-text: #F4F6F4;
+  --input-placeholder: #687B70;
+  --input-focus-border: #7C9A84;
+  --input-focus-ring: rgba(124, 154, 132, 0.25);
+
+  --slot-avail-bg: #16241E;
+  --slot-avail-border: #2B3E34;
+  --slot-avail-text: #E3EBE5;
+  --slot-selected-bg: #7C9A84;
+  --slot-selected-text: #0B1410;
+  --slot-disabled-bg: #101915;
+  --slot-disabled-text: #4F5E56;
+
+  --footer-bg: #0B120F;
+  --footer-text: #9EAEA3;
+  --footer-heading: #F4F6F4;
+  --footer-border: rgba(255, 255, 255, 0.06);
+}

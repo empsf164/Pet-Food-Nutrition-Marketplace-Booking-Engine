@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marketplace — Browse Pet Nutrition Services & Hosts | NOURIPET</title>
+  <meta name="description" content="Search and compare verified pet nutritionists, clinical dietitians, customized meal plans, and real-time consultation slots on NOURIPET.">
+  <meta property="og:title" content="Marketplace — NOURIPET Nutrition Services">
+  <meta property="og:description" content="Discover verified pet nutrition specialists with live calendar availability and upfront pricing.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="assets/css/theme.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+
+  <script src="assets/js/theme.js"></script>
+</head>
+<body>
+
+  <!-- ======================================================================
+       MANDATORY NAVBAR
+       ====================================================================== -->
+  <header class="np-navbar">
+    <div class="container d-flex align-items-center justify-content-between">
+      
+      <a href="index.html" class="navbar-brand">
+        <span class="brand-leaf-icon"><i class="bi bi-heart-pulse-fill"></i></span>
+        <span>NOURIPET</span>
+      </a>
+
+      <nav class="np-desktop-nav d-none d-lg-block" aria-label="Main Navigation">
+        <ul class="np-nav-links">
+          <li class="np-nav-item"><a href="index.html" class="np-nav-link">Home</a></li>
+          
+          <li class="np-nav-item">
+            <a href="marketplace.html" class="np-nav-link active">
+              Marketplace <i class="bi bi-chevron-down fs-xs ms-1"></i>
+            </a>
+            <ul class="np-dropdown-menu">
+              <li><a href="marketplace.html" class="np-dropdown-item"><i class="bi bi-grid-fill"></i> Browse Services</a></li>
+              <li><a href="marketplace.html?cat=pet-food" class="np-dropdown-item"><i class="bi bi-basket2-fill"></i> Pet Food</a></li>
+              <li><a href="marketplace.html?cat=plans" class="np-dropdown-item"><i class="bi bi-journal-medical"></i> Nutrition Plans</a></li>
+              <li><a href="marketplace.html?filter=featured" class="np-dropdown-item"><i class="bi bi-star-fill"></i> Featured Hosts</a></li>
+              <li><a href="marketplace.html?filter=popular" class="np-dropdown-item"><i class="bi bi-fire"></i> Popular Services</a></li>
+            </ul>
+          </li>
+
+          <li class="np-nav-item">
+            <a href="service-details.html" class="np-nav-link">
+              Nutrition Services <i class="bi bi-chevron-down fs-xs ms-1"></i>
+            </a>
+            <ul class="np-dropdown-menu">
+              <li><a href="service-details.html" class="np-dropdown-item"><i class="bi bi-chat-heart"></i> Nutrition Consultation</a></li>
+              <li><a href="service-details.html" class="np-dropdown-item"><i class="bi bi-card-checklist"></i> Personalized Meal Plans</a></li>
+              <li><a href="service-details.html" class="np-dropdown-item"><i class="bi bi-search"></i> Food Assessment</a></li>
+              <li><a href="service-details.html" class="np-dropdown-item"><i class="bi bi-shield-check"></i> Allergy & Sensitivity Guidance</a></li>
+              <li><a href="service-details.html" class="np-dropdown-item"><i class="bi bi-speedometer2"></i> Weight Management</a></li>
+              <li><a href="service-details.html" class="np-dropdown-item"><i class="bi bi-stars"></i> Puppy & Kitten Nutrition</a></li>
+            </ul>
+          </li>
+
+          <li class="np-nav-item"><a href="index.html#how-it-works" class="np-nav-link">How It Works</a></li>
+          <li class="np-nav-item"><a href="signup.html?role=host" class="np-nav-link">For Hosts</a></li>
+          <li class="np-nav-item"><a href="resources.html" class="np-nav-link">Resources</a></li>
+          <li class="np-nav-item"><a href="about.html" class="np-nav-link">About</a></li>
+          <li class="np-nav-item"><a href="contact.html" class="np-nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="d-none d-lg-flex align-items-center gap-3">
+        <button type="button" class="theme-toggle-btn" aria-label="Toggle theme" title="Toggle theme">
+          <i class="bi bi-moon-stars-fill"></i>
+        </button>
+        <a href="login.html" class="btn btn-np-secondary btn-np-sm">Login</a>
+        <a href="signup.html" class="btn btn-np-secondary btn-np-sm">Sign Up</a>
+        <a href="booking.html" class="btn btn-np-primary btn-np-sm">
+          <i class="bi bi-calendar2-check-fill me-1"></i> Book a Consultation
+        </a>
+      </div>
+
+      <div class="d-flex d-lg-none align-items-center gap-2">
+        <button type="button" class="theme-toggle-btn" aria-label="Toggle theme">
+          <i class="bi bi-moon-stars-fill"></i>
+        </button>
+        <button type="button" class="np-mobile-toggle" aria-label="Open mobile menu">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Offcanvas Menu -->
+  <div class="np-mobile-backdrop"></div>
+  <aside class="np-mobile-menu">
+    <div class="d-flex align-items-center justify-content-between pb-3 border-bottom mb-3">
+      <div class="navbar-brand">
+        <span class="brand-leaf-icon"><i class="bi bi-heart-pulse-fill"></i></span>
+        <span>NOURIPET</span>
+      </div>
+      <button type="button" class="btn-close np-mobile-close" aria-label="Close"></button>
+    </div>
+    <ul class="list-unstyled d-flex flex-column gap-2 mb-4">
+      <li><a href="index.html" class="np-nav-link w-100">Home</a></li>
+      <li><a href="marketplace.html" class="np-nav-link w-100 active">Marketplace</a></li>
+      <li><a href="service-details.html" class="np-nav-link w-100">Nutrition Services</a></li>
+      <li><a href="index.html#how-it-works" class="np-nav-link w-100">How It Works</a></li>
+      <li><a href="signup.html?role=host" class="np-nav-link w-100">For Hosts</a></li>
+      <li><a href="resources.html" class="np-nav-link w-100">Resources</a></li>
+      <li><a href="about.html" class="np-nav-link w-100">About</a></li>
+      <li><a href="contact.html" class="np-nav-link w-100">Contact</a></li>
+    </ul>
+    <div class="mt-auto pt-3 border-top d-flex flex-column gap-2">
+      <div class="d-flex gap-2">
+        <a href="login.html" class="btn btn-np-secondary w-50 text-center">Login</a>
+        <a href="signup.html" class="btn btn-np-secondary w-50 text-center">Sign Up</a>
+      </div>
+      <a href="booking.html" class="btn btn-np-primary w-100 text-center">Book a Consultation</a>
+    </div>
+  </aside>
+
+  <!-- ======================================================================
+       MARKETPLACE HERO / HEADER
+       ====================================================================== -->
+  <section class="py-5 border-bottom" style="background: radial-gradient(circle at 10% 20%, var(--color-sage-subtle) 0%, transparent 60%);">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-7">
+          <div class="section-eyebrow"><i class="bi bi-compass"></i> Verified Specialist Directory</div>
+          <h1 class="display-5 fw-bold font-serif mb-2">Find Pet Nutrition Services</h1>
+          <p class="text-secondary lead mb-0">
+            Compare verified animal nutritionists, clinical dietitians, custom meal formulation hosts, and book real-time appointments.
+          </p>
+        </div>
+        <div class="col-lg-5">
+          <div class="bg-white p-3 rounded-4 shadow-sm border" style="background-color: var(--card-bg) !important;">
+            <div class="input-group">
+              <span class="input-group-text bg-transparent border-0 text-muted ps-3">
+                <i class="bi bi-search"></i>
+              </span>
+              <input type="text" id="marketplaceSearchInput" class="form-control border-0" placeholder="Search services, specialties or hosts (e.g. Allergies, Dr. Maya, Renal)..." aria-label="Search services">
+              <button class="btn btn-np-primary px-3 rounded-pill ms-2" type="button" id="marketplaceSearchBtn">Search</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       MAIN MARKETPLACE LAYOUT (Filters Sidebar + Service Cards Grid)
+       ====================================================================== -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="row g-4">
+        
+        <!-- Filters Sidebar -->
+        <div class="col-lg-3">
+          <div class="np-card sticky-top" style="top: 85px; z-index: 20;">
+            <div class="d-flex justify-content-between align-items-center mb-3 pb-2 border-bottom">
+              <h5 class="mb-0 fw-bold fs-6"><i class="bi bi-sliders2 me-2"></i> Filters</h5>
+              <button type="button" class="btn btn-link btn-sm text-decoration-none p-0 text-muted" id="resetFiltersBtn">Reset All</button>
+            </div>
+
+            <!-- Pet Type Filter -->
+            <div class="mb-4">
+              <label class="form-label small text-muted text-uppercase fw-bold">Pet Type</label>
+              <div class="d-flex flex-column gap-2">
+                <div class="form-check">
+                  <input class="form-check-input filter-checkbox" type="checkbox" value="dog" id="filterDog" checked>
+                  <label class="form-check-label small" for="filterDog">Dog (Canine)</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input filter-checkbox" type="checkbox" value="cat" id="filterCat" checked>
+                  <label class="form-check-label small" for="filterCat">Cat (Feline)</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input filter-checkbox" type="checkbox" value="puppy" id="filterPuppy">
+                  <label class="form-check-label small" for="filterPuppy">Puppy / Kitten</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input filter-checkbox" type="checkbox" value="senior" id="filterSenior">
+                  <label class="form-check-label small" for="filterSenior">Senior Pet (8+ yrs)</label>
+                </div>
+              </div>
+            </div>
+
+            <!-- Service Type Filter -->
+            <div class="mb-4">
+              <label class="form-label small text-muted text-uppercase fw-bold">Service Type</label>
+              <div class="d-flex flex-column gap-2">
+                <div class="form-check">
+                  <input class="form-check-input filter-service-check" type="checkbox" value="consultation" id="srvConsultation" checked>
+                  <label class="form-check-label small" for="srvConsultation">Nutrition Consultation</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input filter-service-check" type="checkbox" value="meal-plan" id="srvMealPlan" checked>
+                  <label class="form-check-label small" for="srvMealPlan">Fresh Meal Planning</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input filter-service-check" type="checkbox" value="food-assessment" id="srvAssessment" checked>
+                  <label class="form-check-label small" for="srvAssessment">Food & Label Assessment</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input filter-service-check" type="checkbox" value="allergy" id="srvAllergy" checked>
+                  <label class="form-check-label small" for="srvAllergy">Allergy & GI Guidance</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input filter-service-check" type="checkbox" value="weight" id="srvWeight" checked>
+                  <label class="form-check-label small" for="srvWeight">Weight Management</label>
+                </div>
+              </div>
+            </div>
+
+            <!-- Modality / Location Filter -->
+            <div class="mb-4">
+              <label class="form-label small text-muted text-uppercase fw-bold">Modality</label>
+              <select id="filterModality" class="form-select form-select-sm">
+                <option value="all" selected>All (Online & In-Person)</option>
+                <option value="online">Online Video Only</option>
+                <option value="clinic">In-Person Clinic</option>
+                <option value="home">At-Home Visit</option>
+              </select>
+            </div>
+
+            <!-- Price Range -->
+            <div class="mb-4">
+              <label class="form-label small text-muted text-uppercase fw-bold">Max Starting Price: <span id="priceDisplay">$150</span></label>
+              <input type="range" class="form-range" id="priceRange" min="50" max="150" step="5" value="150">
+            </div>
+
+            <!-- Availability -->
+            <div class="mb-4">
+              <label class="form-label small text-muted text-uppercase fw-bold">Availability</label>
+              <select id="filterAvailability" class="form-select form-select-sm">
+                <option value="any" selected>Any Date</option>
+                <option value="today">Available Today</option>
+                <option value="tomorrow">Available Tomorrow</option>
+                <option value="this-week">This Week</option>
+              </select>
+            </div>
+
+            <!-- Minimum Rating -->
+            <div>
+              <label class="form-label small text-muted text-uppercase fw-bold">Minimum Rating</label>
+              <select id="filterRating" class="form-select form-select-sm">
+                <option value="0" selected>Any Rating</option>
+                <option value="4.5">★ 4.5 and up</option>
+                <option value="4.8">★ 4.8 and up</option>
+                <option value="4.9">★ 4.9 and up</option>
+              </select>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Marketplace Results Column -->
+        <div class="col-lg-9">
+          
+          <!-- Top Sort & Count Bar -->
+          <div class="d-flex flex-column flex-sm-row justify-content-between align-items-sm-center pb-3 border-bottom mb-4 gap-3">
+            <div>
+              <span class="fw-bold text-dark fs-6" id="resultsCount">Showing 6 Nutrition Services</span>
+              <span class="text-muted small ms-1">across verified clinical hosts</span>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <label for="sortSelect" class="small text-muted text-nowrap">Sort by:</label>
+              <select id="sortSelect" class="form-select form-select-sm" style="width: 200px;">
+                <option value="recommended" selected>Recommended</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+                <option value="earliest">Earliest Availability</option>
+                <option value="rating">Highest Rated</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Cards Grid -->
+          <div class="row g-4" id="marketplaceCardsGrid">
+            
+            <!-- Item 1 -->
+            <div class="col-md-6 market-item" 
+                 data-price="75" 
+                 data-rating="4.95" 
+                 data-pet="dog" 
+                 data-service="consultation" 
+                 data-modality="online clinic" 
+                 data-avail="today" 
+                 data-keywords="maya carter clinical canine dog diet consultation portland">
+              <div class="service-card">
+                <div class="service-card-img-wrap">
+                  <img src="assets/images/hero/consultation-scene.jpg" alt="Clinical Canine Consultation">
+                  <span class="service-card-badge np-badge np-badge-accent">Recommended</span>
+                  <span class="service-card-duration"><i class="bi bi-clock me-1"></i> 60 min</span>
+                </div>
+                <div class="service-card-body">
+                  <div class="service-card-host">
+                    <img src="assets/images/hosts/host-maya-carter.jpg" alt="Dr. Maya Carter">
+                    <div>
+                      <div class="fw-bold small">Dr. Maya Carter, M.S., C.P.N.</div>
+                      <div class="text-muted" style="font-size: 0.75rem;">Portland, OR · Canine Specialist</div>
+                    </div>
+                  </div>
+                  <h3 class="service-card-title">
+                    <a href="service-details.html">Personalized Pet Nutrition Consultation</a>
+                  </h3>
+                  <p class="small text-muted mb-3">
+                    One-on-one diagnostic assessment of current meal intake, blood panels, caloric demands, and metabolic requirements.
+                  </p>
+                  <div class="d-flex align-items-center justify-content-between mb-3">
+                    <div class="badge bg-success-subtle text-success border border-success-subtle small">
+                      <i class="bi bi-calendar-check me-1"></i> Next: Today · 4:30 PM
+                    </div>
+                    <div class="text-warning small fw-bold">
+                      <i class="bi bi-star-fill"></i> 4.95 (184)
+                    </div>
+                  </div>
+                  <div class="service-card-footer">
+                    <div class="service-price">From $75 <span>/session</span></div>
+                    <div class="d-flex gap-2">
+                      <a href="service-details.html" class="btn btn-np-secondary btn-np-sm">View Details</a>
+                      <a href="booking.html?service=consultation&host=dr-maya-carter" class="btn btn-np-primary btn-np-sm">Book</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="col-md-6 market-item" 
+                 data-price="120" 
+                 data-rating="4.90" 
+                 data-pet="dog cat" 
+                 data-service="meal-plan" 
+                 data-modality="online" 
+                 data-avail="tomorrow" 
+                 data-keywords="elena rostova meal plan raw fresh formulation recipes boulder">
+              <div class="service-card">
+                <div class="service-card-img-wrap">
+                  <img src="assets/images/food/fresh-food-spread.jpg" alt="Custom Fresh Meal Plan Formulation">
+                  <span class="service-card-badge np-badge">Comprehensive</span>
+                  <span class="service-card-duration"><i class="bi bi-clock me-1"></i> 90 min</span>
+                </div>
+                <div class="service-card-body">
+                  <div class="service-card-host">
+                    <img src="https://images.unsplash.com/photo-1594824813590-78530e4284d7?auto=format&fit=crop&w=120&q=80" alt="Elena Rostova">
+                    <div>
+                      <div class="fw-bold small">Elena Rostova, M.Sc.</div>
+                      <div class="text-muted" style="font-size: 0.75rem;">Boulder, CO · Raw & Fresh Diet Formulator</div>
+                    </div>
+                  </div>
+                  <h3 class="service-card-title">
+                    <a href="service-details.html">Personalized Fresh Meal Planning</a>
+                  </h3>
+                  <p class="small text-muted mb-3">
+                    Customized batch recipes with precise gram weights, calcium-to-phosphorus ratios, and grocery preparation instructions.
+                  </p>
+                  <div class="d-flex align-items-center justify-content-between mb-3">
+                    <div class="badge bg-success-subtle text-success border border-success-subtle small">
+                      <i class="bi bi-calendar-check me-1"></i> Next: Tomorrow · 11:00 AM
+                    </div>
+                    <div class="text-warning small fw-bold">
+                      <i class="bi bi-star-fill"></i> 4.90 (142)
+                    </div>
+                  </div>
+                  <div class="service-card-footer">
+                    <div class="service-price">From $120 <span>/plan</span></div>
+                    <div class="d-flex gap-2">
+                      <a href="service-details.html" class="btn btn-np-secondary btn-np-sm">View Details</a>
+                      <a href="booking.html?service=meal-plan&host=elena-rostova" class="btn btn-np-primary btn-np-sm">Book</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="col-md-6 market-item" 
+                 data-price="55" 
+                 data-rating="4.88" 
+                 data-pet="dog" 
+                 data-service="food-assessment" 
+                 data-modality="online" 
+                 data-avail="this-week" 
+                 data-keywords="marcus chen food assessment commercial kibble analysis ingredients seattle">
+              <div class="service-card">
+                <div class="service-card-img-wrap">
+                  <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&w=600&q=80" alt="Commercial Food Assessment">
+                  <span class="service-card-badge np-badge np-badge-amber">Fast Turnaround</span>
+                  <span class="service-card-duration"><i class="bi bi-clock me-1"></i> 45 min</span>
+                </div>
+                <div class="service-card-body">
+                  <div class="service-card-host">
+                    <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=120&q=80" alt="Marcus Chen">
+                    <div>
+                      <div class="fw-bold small">Marcus Chen, B.Sc.</div>
+                      <div class="text-muted" style="font-size: 0.75rem;">Seattle, WA · Animal Nutrition Analyst</div>
+                    </div>
+                  </div>
+                  <h3 class="service-card-title">
+                    <a href="service-details.html">Commercial Food & Ingredient Assessment</a>
+                  </h3>
+                  <p class="small text-muted mb-3">
+                    Detailed breakdown of your pet’s current brand: ingredient quality, toxic preservatives, and true carbohydrate levels.
+                  </p>
+                  <div class="d-flex align-items-center justify-content-between mb-3">
+                    <div class="badge bg-success-subtle text-success border border-success-subtle small">
+                      <i class="bi bi-calendar-check me-1"></i> Next: Friday · 1:30 PM
+                    </div>
+                    <div class="text-warning small fw-bold">
+                      <i class="bi bi-star-fill"></i> 4.88 (98)
+                    </div>
+                  </div>
+                  <div class="service-card-footer">
+                    <div class="service-price">From $55 <span>/session</span></div>
+                    <div class="d-flex gap-2">
+                      <a href="service-details.html" class="btn btn-np-secondary btn-np-sm">View Details</a>
+                      <a href="booking.html?service=food-assessment&host=marcus-chen" class="btn btn-np-primary btn-np-sm">Book</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="col-md-6 market-item" 
+                 data-price="95" 
+                 data-rating="5.0" 
+                 data-pet="cat dog" 
+                 data-service="allergy" 
+                 data-modality="online clinic" 
+                 data-avail="this-week" 
+                 data-keywords="julian vance feline allergy renal kidney microbiome austin">
+              <div class="service-card">
+                <div class="service-card-img-wrap">
+                  <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=600&q=80" alt="Allergy and Sensitivity Guidance">
+                  <span class="service-card-badge np-badge">Feline & Canine</span>
+                  <span class="service-card-duration"><i class="bi bi-clock me-1"></i> 60 min</span>
+                </div>
+                <div class="service-card-body">
+                  <div class="service-card-host">
+                    <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=120&q=80" alt="Dr. Julian Vance">
+                    <div>
+                      <div class="fw-bold small">Dr. Julian Vance, DVM</div>
+                      <div class="text-muted" style="font-size: 0.75rem;">Austin, TX · Renal & GI Dietetics</div>
+                    </div>
+                  </div>
+                  <h3 class="service-card-title">
+                    <a href="service-details.html">Allergy & Gut Microbiome Guidance</a>
+                  </h3>
+                  <p class="small text-muted mb-3">
+                    Combat chronic itching, vomiting, and loose stools with structured novel protein trials and targeted prebiotics.
+                  </p>
+                  <div class="d-flex align-items-center justify-content-between mb-3">
+                    <div class="badge bg-success-subtle text-success border border-success-subtle small">
+                      <i class="bi bi-calendar-check me-1"></i> Next: Thursday · 3:00 PM
+                    </div>
+                    <div class="text-warning small fw-bold">
+                      <i class="bi bi-star-fill"></i> 5.0 (210)
+                    </div>
+                  </div>
+                  <div class="service-card-footer">
+                    <div class="service-price">From $95 <span>/session</span></div>
+                    <div class="d-flex gap-2">
+                      <a href="service-details.html" class="btn btn-np-secondary btn-np-sm">View Details</a>
+                      <a href="booking.html?service=allergy&host=dr-julian-vance" class="btn btn-np-primary btn-np-sm">Book</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="col-md-6 market-item" 
+                 data-price="85" 
+                 data-rating="4.92" 
+                 data-pet="dog senior" 
+                 data-service="weight" 
+                 data-modality="online clinic home" 
+                 data-avail="tomorrow" 
+                 data-keywords="amara okafor weight management senior obesity metabolic calorie chicago">
+              <div class="service-card">
+                <div class="service-card-img-wrap">
+                  <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=600&q=80" alt="Metabolic Weight Protocol">
+                  <span class="service-card-badge np-badge">Metabolic</span>
+                  <span class="service-card-duration"><i class="bi bi-clock me-1"></i> 60 min</span>
+                </div>
+                <div class="service-card-body">
+                  <div class="service-card-host">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=120&q=80" alt="Amara Okafor">
+                    <div>
+                      <div class="fw-bold small">Amara Okafor, C.V.T.</div>
+                      <div class="text-muted" style="font-size: 0.75rem;">Chicago, IL · Senior Metabolic Specialist</div>
+                    </div>
+                  </div>
+                  <h3 class="service-card-title">
+                    <a href="service-details.html">Metabolic Weight Management Protocol</a>
+                  </h3>
+                  <p class="small text-muted mb-3">
+                    Healthy caloric deficit scheduling, satiety fiber pacing, and bi-weekly weigh-in guidance for sustainable pet vitality.
+                  </p>
+                  <div class="d-flex align-items-center justify-content-between mb-3">
+                    <div class="badge bg-success-subtle text-success border border-success-subtle small">
+                      <i class="bi bi-calendar-check me-1"></i> Next: Tomorrow · 2:00 PM
+                    </div>
+                    <div class="text-warning small fw-bold">
+                      <i class="bi bi-star-fill"></i> 4.92 (115)
+                    </div>
+                  </div>
+                  <div class="service-card-footer">
+                    <div class="service-price">From $85 <span>/session</span></div>
+                    <div class="d-flex gap-2">
+                      <a href="service-details.html" class="btn btn-np-secondary btn-np-sm">View Details</a>
+                      <a href="booking.html?service=weight&host=amara-okafor" class="btn btn-np-primary btn-np-sm">Book</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 6 -->
+            <div class="col-md-6 market-item" 
+                 data-price="80" 
+                 data-rating="4.96" 
+                 data-pet="puppy dog cat" 
+                 data-service="puppy" 
+                 data-modality="online" 
+                 data-avail="this-week" 
+                 data-keywords="sarah jenkins puppy kitten pediatric dietetics growth calcium francisco">
+              <div class="service-card">
+                <div class="service-card-img-wrap">
+                  <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=600&q=80" alt="Puppy and Kitten Growth Plan">
+                  <span class="service-card-badge np-badge np-badge-accent">Early Life</span>
+                  <span class="service-card-duration"><i class="bi bi-clock me-1"></i> 60 min</span>
+                </div>
+                <div class="service-card-body">
+                  <div class="service-card-host">
+                    <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=120&q=80" alt="Dr. Sarah Jenkins">
+                    <div>
+                      <div class="fw-bold small">Dr. Sarah Jenkins, Ph.D.</div>
+                      <div class="text-muted" style="font-size: 0.75rem;">San Francisco, CA · Pediatric Animal Dietetics</div>
+                    </div>
+                  </div>
+                  <h3 class="service-card-title">
+                    <a href="service-details.html">Puppy & Kitten Growth Nutrition Plan</a>
+                  </h3>
+                  <p class="small text-muted mb-3">
+                    Developmental milestones, DHA brain synthesis, and phased weaning transition curves tailored by adult projected weight.
+                  </p>
+                  <div class="d-flex align-items-center justify-content-between mb-3">
+                    <div class="badge bg-success-subtle text-success border border-success-subtle small">
+                      <i class="bi bi-calendar-check me-1"></i> Next: Friday · 9:30 AM
+                    </div>
+                    <div class="text-warning small fw-bold">
+                      <i class="bi bi-star-fill"></i> 4.96 (168)
+                    </div>
+                  </div>
+                  <div class="service-card-footer">
+                    <div class="service-price">From $80 <span>/session</span></div>
+                    <div class="d-flex gap-2">
+                      <a href="service-details.html" class="btn btn-np-secondary btn-np-sm">View Details</a>
+                      <a href="booking.html?service=puppy&host=dr-sarah-jenkins" class="btn btn-np-primary btn-np-sm">Book</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Empty State (Hidden by default) -->
+          <div id="noResultsBox" class="np-card text-center p-5 d-none my-4">
+            <i class="bi bi-search text-muted fs-1 mb-3 d-block"></i>
+            <h4 class="fw-bold">No matching nutrition services found</h4>
+            <p class="text-muted small">Try broadening your search term or unchecking some filter restrictions.</p>
+            <button class="btn btn-np-secondary" id="resetEmptyFiltersBtn">Reset All Filters</button>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       FOOTER
+       ====================================================================== -->
+  <footer class="np-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="navbar-brand text-white mb-2">
+            <span class="brand-leaf-icon"><i class="bi bi-heart-pulse-fill"></i></span>
+            <span>NOURIPET</span>
+          </div>
+          <p class="small mb-3" style="color: var(--footer-text);">
+            Better Nutrition. Happier Pets. The premier marketplace connecting conscientious pet guardians with certified animal dietitians and custom meal formulators.
+          </p>
+          <div class="d-flex gap-2">
+            <a href="#" class="social-link-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-link-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-link-btn" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5>Marketplace</h5>
+          <ul class="np-footer-links">
+            <li><a href="marketplace.html">Browse Services</a></li>
+            <li><a href="marketplace.html?filter=hosts">Find a Host</a></li>
+            <li><a href="marketplace.html?cat=pet-food">Pet Food</a></li>
+            <li><a href="marketplace.html?cat=plans">Nutrition Plans</a></li>
+            <li><a href="booking.html">Instant Booking</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-6">
+          <h5>Resources</h5>
+          <ul class="np-footer-links">
+            <li><a href="resources.html">Nutrition Guides</a></li>
+            <li><a href="resources.html#faqs">Nutrition FAQs</a></li>
+            <li><a href="index.html#how-it-works">How It Works</a></li>
+            <li><a href="contact.html">Support & Contact</a></li>
+            <li><a href="quote.html">Price Calculator</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5>Company</h5>
+          <ul class="np-footer-links mb-3">
+            <li><a href="about.html">About NOURIPET</a></li>
+            <li><a href="signup.html?role=host">For Hosts & Specialists</a></li>
+            <li><a href="contact.html">Careers & Press</a></li>
+            <li><a href="coming-soon.html">Mobile App (Beta)</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="np-footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <div>© 2026 NOURIPET Inc. All rights reserved. Demo marketplace template.</div>
+        <div class="d-flex gap-3 mt-2 mt-md-0">
+          <a href="about.html" class="text-muted small">Privacy Policy</a>
+          <span class="text-muted">·</span>
+          <a href="about.html" class="text-muted small">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <!-- Live Marketplace Filtering Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const searchInput = document.getElementById('marketplaceSearchInput');
+      const searchBtn = document.getElementById('marketplaceSearchBtn');
+      const priceRange = document.getElementById('priceRange');
+      const priceDisplay = document.getElementById('priceDisplay');
+      const modalitySel = document.getElementById('filterModality');
+      const availSel = document.getElementById('filterAvailability');
+      const ratingSel = document.getElementById('filterRating');
+      const sortSel = document.getElementById('sortSelect');
+      const cardsGrid = document.getElementById('marketplaceCardsGrid');
+      const items = Array.from(document.querySelectorAll('.market-item'));
+      const countDisplay = document.getElementById('resultsCount');
+      const noResultsBox = document.getElementById('noResultsBox');
+
+      // Pre-fill from query string if available
+      const params = new URLSearchParams(window.location.search);
+      if (params.get('search')) {
+        searchInput.value = params.get('search');
+      }
+
+      function filterAndSortItems() {
+        const query = (searchInput.value || '').trim().toLowerCase();
+        const maxPrice = parseFloat(priceRange.value);
+        const selModality = modalitySel.value;
+        const selAvail = availSel.value;
+        const minRating = parseFloat(ratingSel.value);
+        const sortVal = sortSel.value;
+
+        // Active Pet Types
+        const activePetTypes = [];
+        document.querySelectorAll('.filter-checkbox:checked').forEach(c => activePetTypes.push(c.value));
+
+        // Active Service Types
+        const activeServiceTypes = [];
+        document.querySelectorAll('.filter-service-check:checked').forEach(c => activeServiceTypes.push(c.value));
+
+        let visibleCount = 0;
+
+        items.forEach(item => {
+          const price = parseFloat(item.getAttribute('data-price'));
+          const rating = parseFloat(item.getAttribute('data-rating'));
+          const petAttr = item.getAttribute('data-pet') || '';
+          const srvAttr = item.getAttribute('data-service') || '';
+          const modAttr = item.getAttribute('data-modality') || '';
+          const availAttr = item.getAttribute('data-avail') || '';
+          const keywords = item.getAttribute('data-keywords') || '';
+
+          // Match query
+          const matchesQuery = !query || keywords.includes(query) || item.innerText.toLowerCase().includes(query);
+
+          // Match price
+          const matchesPrice = price <= maxPrice;
+
+          // Match rating
+          const matchesRating = rating >= minRating;
+
+          // Match modality
+          const matchesModality = selModality === 'all' || modAttr.includes(selModality);
+
+          // Match availability
+          const matchesAvail = selAvail === 'any' || availAttr === selAvail || (selAvail === 'this-week');
+
+          // Match pet type
+          const matchesPet = activePetTypes.length === 0 || activePetTypes.some(p => petAttr.includes(p));
+
+          // Match service type
+          const matchesService = activeServiceTypes.length === 0 || activeServiceTypes.some(s => srvAttr.includes(s));
+
+          if (matchesQuery && matchesPrice && matchesRating && matchesModality && matchesAvail && matchesPet && matchesService) {
+            item.style.display = '';
+            visibleCount++;
+          } else {
+            item.style.display = 'none';
+          }
+        });
+
+        // Sorting
+        const visibleItems = items.filter(i => i.style.display !== 'none');
+        visibleItems.sort((a, b) => {
+          const priceA = parseFloat(a.getAttribute('data-price'));
+          const priceB = parseFloat(b.getAttribute('data-price'));
+          const ratingA = parseFloat(a.getAttribute('data-rating'));
+          const ratingB = parseFloat(b.getAttribute('data-rating'));
+
+          if (sortVal === 'price-low') return priceA - priceB;
+          if (sortVal === 'price-high') return priceB - priceA;
+          if (sortVal === 'rating') return ratingB - ratingA;
+          return 0; // Default recommended
+        });
+
+        visibleItems.forEach(i => cardsGrid.appendChild(i));
+
+        // Update count & empty state
+        if (countDisplay) {
+          countDisplay.textContent = `Showing ${visibleCount} Nutrition Services`;
+        }
+
+        if (noResultsBox) {
+          if (visibleCount === 0) noResultsBox.classList.remove('d-none');
+          else noResultsBox.classList.add('d-none');
+        }
+      }
+
+      // Event listeners
+      if (priceRange) {
+        priceRange.addEventListener('input', () => {
+          priceDisplay.textContent = `$${priceRange.value}`;
+          filterAndSortItems();
+        });
+      }
+
+      [searchInput, modalitySel, availSel, ratingSel, sortSel].forEach(elem => {
+        if (elem) elem.addEventListener('change', filterAndSortItems);
+      });
+
+      if (searchInput) {
+        searchInput.addEventListener('input', filterAndSortItems);
+      }
+      if (searchBtn) {
+        searchBtn.addEventListener('click', filterAndSortItems);
+      }
+
+      document.querySelectorAll('.filter-checkbox, .filter-service-check').forEach(chk => {
+        chk.addEventListener('change', filterAndSortItems);
+      });
+
+      function resetFilters() {
+        if (searchInput) searchInput.value = '';
+        if (priceRange) {
+          priceRange.value = 150;
+          priceDisplay.textContent = '$150';
+        }
+        if (modalitySel) modalitySel.value = 'all';
+        if (availSel) availSel.value = 'any';
+        if (ratingSel) ratingSel.value = '0';
+        if (sortSel) sortSel.value = 'recommended';
+        document.querySelectorAll('.filter-checkbox, .filter-service-check').forEach(c => c.checked = true);
+        filterAndSortItems();
+      }
+
+      document.getElementById('resetFiltersBtn')?.addEventListener('click', resetFilters);
+      document.getElementById('resetEmptyFiltersBtn')?.addEventListener('click', resetFilters);
+
+      // Initial filter pass
+      filterAndSortItems();
+    });
+  </script>
+
+</body>
+</html>

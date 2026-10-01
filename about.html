@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About NOURIPET — The Pet Nutrition Marketplace</title>
+  <meta name="description" content="Discover our mission to bring evidence-based nutrition planning, transparent bookings, and vetted specialists to modern pet guardians.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="assets/css/theme.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+
+  <script src="assets/js/theme.js"></script>
+</head>
+<body>
+
+  <!-- ======================================================================
+       MANDATORY NAVBAR
+       ====================================================================== -->
+  <header class="np-navbar">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="index.html" class="navbar-brand">
+        <span class="brand-leaf-icon"><i class="bi bi-heart-pulse-fill"></i></span>
+        <span>NOURIPET</span>
+      </a>
+
+      <nav class="np-desktop-nav d-none d-lg-block" aria-label="Main Navigation">
+        <ul class="np-nav-links">
+          <li class="np-nav-item"><a href="index.html" class="np-nav-link">Home</a></li>
+          
+          <li class="np-nav-item">
+            <a href="marketplace.html" class="np-nav-link">
+              Marketplace <i class="bi bi-chevron-down fs-xs ms-1"></i>
+            </a>
+            <ul class="np-dropdown-menu">
+              <li><a href="marketplace.html" class="np-dropdown-item"><i class="bi bi-grid-fill"></i> Browse Services</a></li>
+              <li><a href="marketplace.html?cat=pet-food" class="np-dropdown-item"><i class="bi bi-basket2-fill"></i> Pet Food</a></li>
+              <li><a href="marketplace.html?cat=plans" class="np-dropdown-item"><i class="bi bi-journal-medical"></i> Nutrition Plans</a></li>
+              <li><a href="marketplace.html?filter=featured" class="np-dropdown-item"><i class="bi bi-star-fill"></i> Featured Hosts</a></li>
+              <li><a href="marketplace.html?filter=popular" class="np-dropdown-item"><i class="bi bi-fire"></i> Popular Services</a></li>
+            </ul>
+          </li>
+
+          <li class="np-nav-item">
+            <a href="service-details.html" class="np-nav-link">
+              Nutrition Services <i class="bi bi-chevron-down fs-xs ms-1"></i>
+            </a>
+            <ul class="np-dropdown-menu">
+              <li><a href="service-details.html" class="np-dropdown-item"><i class="bi bi-chat-heart"></i> Nutrition Consultation</a></li>
+              <li><a href="service-details.html" class="np-dropdown-item"><i class="bi bi-card-checklist"></i> Personalized Meal Plans</a></li>
+              <li><a href="service-details.html" class="np-dropdown-item"><i class="bi bi-search"></i> Food Assessment</a></li>
+              <li><a href="service-details.html" class="np-dropdown-item"><i class="bi bi-shield-check"></i> Allergy & Sensitivity Guidance</a></li>
+              <li><a href="service-details.html" class="np-dropdown-item"><i class="bi bi-speedometer2"></i> Weight Management</a></li>
+              <li><a href="service-details.html" class="np-dropdown-item"><i class="bi bi-stars"></i> Puppy & Kitten Nutrition</a></li>
+            </ul>
+          </li>
+
+          <li class="np-nav-item"><a href="index.html#how-it-works" class="np-nav-link">How It Works</a></li>
+          <li class="np-nav-item"><a href="signup.html?role=host" class="np-nav-link">For Hosts</a></li>
+          <li class="np-nav-item"><a href="resources.html" class="np-nav-link">Resources</a></li>
+          <li class="np-nav-item"><a href="about.html" class="np-nav-link active">About</a></li>
+          <li class="np-nav-item"><a href="contact.html" class="np-nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="d-none d-lg-flex align-items-center gap-3">
+        <button type="button" class="theme-toggle-btn" aria-label="Toggle theme">
+          <i class="bi bi-moon-stars-fill"></i>
+        </button>
+        <a href="login.html" class="btn btn-np-secondary btn-np-sm">Login</a>
+        <a href="signup.html" class="btn btn-np-secondary btn-np-sm">Sign Up</a>
+        <a href="booking.html" class="btn btn-np-primary btn-np-sm">
+          <i class="bi bi-calendar2-check-fill me-1"></i> Book a Consultation
+        </a>
+      </div>
+
+      <div class="d-flex d-lg-none align-items-center gap-2">
+        <button type="button" class="theme-toggle-btn" aria-label="Toggle theme">
+          <i class="bi bi-moon-stars-fill"></i>
+        </button>
+        <button type="button" class="np-mobile-toggle" aria-label="Open mobile menu">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Offcanvas Menu -->
+  <div class="np-mobile-backdrop"></div>
+  <aside class="np-mobile-menu">
+    <div class="d-flex align-items-center justify-content-between pb-3 border-bottom mb-3">
+      <div class="navbar-brand">
+        <span class="brand-leaf-icon"><i class="bi bi-heart-pulse-fill"></i></span>
+        <span>NOURIPET</span>
+      </div>
+      <button type="button" class="btn-close np-mobile-close" aria-label="Close"></button>
+    </div>
+    <ul class="list-unstyled d-flex flex-column gap-2 mb-4">
+      <li><a href="index.html" class="np-nav-link w-100">Home</a></li>
+      <li><a href="marketplace.html" class="np-nav-link w-100">Marketplace</a></li>
+      <li><a href="service-details.html" class="np-nav-link w-100">Nutrition Services</a></li>
+      <li><a href="index.html#how-it-works" class="np-nav-link w-100">How It Works</a></li>
+      <li><a href="signup.html?role=host" class="np-nav-link w-100">For Hosts</a></li>
+      <li><a href="resources.html" class="np-nav-link w-100">Resources</a></li>
+      <li><a href="about.html" class="np-nav-link w-100 active">About</a></li>
+      <li><a href="contact.html" class="np-nav-link w-100">Contact</a></li>
+    </ul>
+    <div class="mt-auto pt-3 border-top d-flex flex-column gap-2">
+      <div class="d-flex gap-2">
+        <a href="login.html" class="btn btn-np-secondary w-50 text-center">Login</a>
+        <a href="signup.html" class="btn btn-np-secondary w-50 text-center">Sign Up</a>
+      </div>
+      <a href="booking.html" class="btn btn-np-primary w-100 text-center">Book a Consultation</a>
+    </div>
+  </aside>
+
+  <!-- ======================================================================
+       ABOUT HERO
+       ====================================================================== -->
+  <section class="py-5 border-bottom" style="background: radial-gradient(circle at 10% 20%, var(--color-sage-subtle) 0%, transparent 60%);">
+    <div class="container text-center">
+      <div class="section-eyebrow"><i class="bi bi-heart-pulse-fill text-success"></i> Our Purpose</div>
+      <h1 class="display-5 fw-bold font-serif mb-3">Better Nutrition. Happier Pets.</h1>
+      <p class="text-secondary lead mx-auto" style="max-width: 700px;">
+        NOURIPET was built to solve the frustration pet parents face when seeking trustworthy, science-led dietary guidance for their dogs and cats.
+      </p>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       ABOUT CONTENT SECTIONS
+       ====================================================================== -->
+  <section class="section-padding">
+    <div class="container">
+      
+      <!-- Section 1: Our Mission -->
+      <div class="row align-items-center g-5 mb-5 pb-4">
+        <div class="col-lg-6">
+          <div class="section-eyebrow">Our Mission</div>
+          <h2 class="section-title fs-2 mb-3">Bridging Clinical Nutrition & Conscientious Pet Care</h2>
+          <p>
+            For decades, companion animal nutrition was treated as an afterthought—dominated by opaque marketing claims, mystery meat meals, and generic feeding tables printed on the back of kibble sacks.
+          </p>
+          <p>
+            NOURIPET creates a direct bridge between pet parents and independent, verified animal nutritionists, clinical dietitians, and formulation specialists. We believe tailored nutrition is the single most powerful preventative health tool available for our companions.
+          </p>
+        </div>
+        <div class="col-lg-6">
+          <div class="rounded-4 overflow-hidden shadow-sm border">
+            <img src="assets/images/hero/consultation-scene.jpg" alt="Clinical Nutrition Collaboration" style="width: 100%; height: 380px; object-fit: cover;">
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 2: How The Marketplace Works -->
+      <div class="mb-5 pb-4">
+        <div class="text-center section-header mb-4">
+          <div class="section-eyebrow">The Platform Model</div>
+          <h2 class="section-title fs-2">How The Marketplace Works</h2>
+          <p class="section-subtitle">
+            A frictionless ecosystem for discovery, real-time booking, and escrow-protected deposits.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="np-card h-100 p-4">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <span class="step-number mb-0">1</span>
+                <h4 class="fs-5 fw-bold mb-0">Pet Parent Discovery</h4>
+              </div>
+              <p class="small text-muted mb-0">
+                Filter nutrition services by species, health condition (e.g. allergies, renal, weight), duration, and modality. Review transparent pricing and verified client testimonials.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="np-card h-100 p-4">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <span class="step-number mb-0">2</span>
+                <h4 class="fs-5 fw-bold mb-0">Host Professional Hub</h4>
+              </div>
+              <p class="small text-muted mb-0">
+                Qualified animal nutrition specialists host their clinical services, publish live calendar schedules, and set upfront rates without middlemen commissions.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="np-card h-100 p-4">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <span class="step-number mb-0">3</span>
+                <h4 class="fs-5 fw-bold mb-0">Escrow Security</h4>
+              </div>
+              <p class="small text-muted mb-0">
+                A partial $25 deposit locks in the appointment slot on the specialist's calendar. The remaining balance is released only once the consultation has taken place.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 3: Trust & Transparency Guarantees -->
+      <div class="p-4 p-md-5 rounded-4 border" style="background-color: var(--bg-subtle);">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-5">
+            <div class="section-eyebrow">Ethical Standards</div>
+            <h3 class="fw-bold fs-3 mb-2 font-serif">Trust & Transparency</h3>
+            <p class="text-secondary small mb-0">
+              We uphold strict standards across all marketplace participants to ensure evidence-led advice without commercial bias.
+            </p>
+          </div>
+          <div class="col-lg-7">
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <div class="p-3 rounded-3 bg-white border" style="background-color: var(--card-bg) !important;">
+                  <div class="fw-bold small text-forest mb-1"><i class="bi bi-shield-check me-1"></i> No Brand Kickbacks</div>
+                  <div class="text-muted" style="font-size: 0.78rem;">Our hosts do not receive covert brand commissions for food recommendations.</div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="p-3 rounded-3 bg-white border" style="background-color: var(--card-bg) !important;">
+                  <div class="fw-bold small text-forest mb-1"><i class="bi bi-mortarboard me-1"></i> Academic Rigor</div>
+                  <div class="text-muted" style="font-size: 0.78rem;">Dietary recommendations follow NRC, FEDIAF, and AAFCO nutritional boundaries.</div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="p-3 rounded-3 bg-white border" style="background-color: var(--card-bg) !important;">
+                  <div class="fw-bold small text-forest mb-1"><i class="bi bi-calendar-check me-1"></i> Zero Risk Reschedules</div>
+                  <div class="text-muted" style="font-size: 0.78rem;">Change your appointment anytime up to 24 hours prior with full deposit retention.</div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="p-3 rounded-3 bg-white border" style="background-color: var(--card-bg) !important;">
+                  <div class="fw-bold small text-forest mb-1"><i class="bi bi-file-earmark-medical me-1"></i> Vet Coordination</div>
+                  <div class="text-muted" style="font-size: 0.78rem;">We encourage sharing consultation PDF plans with your primary veterinarian.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       FOOTER
+       ====================================================================== -->
+  <footer class="np-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="navbar-brand text-white mb-2">
+            <span class="brand-leaf-icon"><i class="bi bi-heart-pulse-fill"></i></span>
+            <span>NOURIPET</span>
+          </div>
+          <p class="small mb-3" style="color: var(--footer-text);">
+            Better Nutrition. Happier Pets. The premier marketplace connecting conscientious pet guardians with certified animal dietitians and custom meal formulators.
+          </p>
+        </div>
+
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5>Marketplace</h5>
+          <ul class="np-footer-links">
+            <li><a href="marketplace.html">Browse Services</a></li>
+            <li><a href="marketplace.html?filter=hosts">Find a Host</a></li>
+            <li><a href="marketplace.html?cat=pet-food">Pet Food</a></li>
+            <li><a href="marketplace.html?cat=plans">Nutrition Plans</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-6">
+          <h5>Resources</h5>
+          <ul class="np-footer-links">
+            <li><a href="resources.html">Nutrition Guides</a></li>
+            <li><a href="resources.html#faqs">Nutrition FAQs</a></li>
+            <li><a href="index.html#how-it-works">How It Works</a></li>
+            <li><a href="contact.html">Support & Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5>Company</h5>
+          <ul class="np-footer-links mb-3">
+            <li><a href="about.html">About NOURIPET</a></li>
+            <li><a href="signup.html?role=host">For Hosts & Specialists</a></li>
+            <li><a href="contact.html">Careers & Press</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="np-footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <div>© 2026 NOURIPET Inc. All rights reserved. Demo marketplace template.</div>
+        <div class="d-flex gap-3 mt-2 mt-md-0">
+          <a href="about.html" class="text-muted small">Privacy Policy</a>
+          <span class="text-muted">·</span>
+          <a href="about.html" class="text-muted small">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>

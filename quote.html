@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Personalized Booking Quote — NOURIPET</title>
+  <meta name="description" content="Instant transparent pet nutrition consultation pricing calculator and deposit breakdown on NOURIPET.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="assets/css/theme.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+
+  <script src="assets/js/theme.js"></script>
+</head>
+<body>
+
+  <!-- ======================================================================
+       MANDATORY NAVBAR
+       ====================================================================== -->
+  <header class="np-navbar">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="index.html" class="navbar-brand">
+        <span class="brand-leaf-icon"><i class="bi bi-heart-pulse-fill"></i></span>
+        <span>NOURIPET</span>
+      </a>
+
+      <nav class="np-desktop-nav d-none d-lg-block" aria-label="Main Navigation">
+        <ul class="np-nav-links">
+          <li class="np-nav-item"><a href="index.html" class="np-nav-link">Home</a></li>
+          
+          <li class="np-nav-item">
+            <a href="marketplace.html" class="np-nav-link">
+              Marketplace <i class="bi bi-chevron-down fs-xs ms-1"></i>
+            </a>
+            <ul class="np-dropdown-menu">
+              <li><a href="marketplace.html" class="np-dropdown-item"><i class="bi bi-grid-fill"></i> Browse Services</a></li>
+              <li><a href="marketplace.html?cat=pet-food" class="np-dropdown-item"><i class="bi bi-basket2-fill"></i> Pet Food</a></li>
+              <li><a href="marketplace.html?cat=plans" class="np-dropdown-item"><i class="bi bi-journal-medical"></i> Nutrition Plans</a></li>
+              <li><a href="marketplace.html?filter=featured" class="np-dropdown-item"><i class="bi bi-star-fill"></i> Featured Hosts</a></li>
+              <li><a href="marketplace.html?filter=popular" class="np-dropdown-item"><i class="bi bi-fire"></i> Popular Services</a></li>
+            </ul>
+          </li>
+
+          <li class="np-nav-item">
+            <a href="service-details.html" class="np-nav-link">
+              Nutrition Services <i class="bi bi-chevron-down fs-xs ms-1"></i>
+            </a>
+            <ul class="np-dropdown-menu">
+              <li><a href="service-details.html" class="np-dropdown-item"><i class="bi bi-chat-heart"></i> Nutrition Consultation</a></li>
+              <li><a href="service-details.html" class="np-dropdown-item"><i class="bi bi-card-checklist"></i> Personalized Meal Plans</a></li>
+              <li><a href="service-details.html" class="np-dropdown-item"><i class="bi bi-search"></i> Food Assessment</a></li>
+              <li><a href="service-details.html" class="np-dropdown-item"><i class="bi bi-shield-check"></i> Allergy & Sensitivity Guidance</a></li>
+              <li><a href="service-details.html" class="np-dropdown-item"><i class="bi bi-speedometer2"></i> Weight Management</a></li>
+              <li><a href="service-details.html" class="np-dropdown-item"><i class="bi bi-stars"></i> Puppy & Kitten Nutrition</a></li>
+            </ul>
+          </li>
+
+          <li class="np-nav-item"><a href="index.html#how-it-works" class="np-nav-link">How It Works</a></li>
+          <li class="np-nav-item"><a href="signup.html?role=host" class="np-nav-link">For Hosts</a></li>
+          <li class="np-nav-item"><a href="resources.html" class="np-nav-link">Resources</a></li>
+          <li class="np-nav-item"><a href="about.html" class="np-nav-link">About</a></li>
+          <li class="np-nav-item"><a href="contact.html" class="np-nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="d-none d-lg-flex align-items-center gap-3">
+        <button type="button" class="theme-toggle-btn" aria-label="Toggle theme">
+          <i class="bi bi-moon-stars-fill"></i>
+        </button>
+        <a href="login.html" class="btn btn-np-secondary btn-np-sm">Login</a>
+        <a href="signup.html" class="btn btn-np-secondary btn-np-sm">Sign Up</a>
+        <a href="booking.html" class="btn btn-np-primary btn-np-sm">
+          <i class="bi bi-calendar2-check-fill me-1"></i> Book a Consultation
+        </a>
+      </div>
+
+      <div class="d-flex d-lg-none align-items-center gap-2">
+        <button type="button" class="theme-toggle-btn" aria-label="Toggle theme">
+          <i class="bi bi-moon-stars-fill"></i>
+        </button>
+        <button type="button" class="np-mobile-toggle" aria-label="Open mobile menu">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Offcanvas Menu -->
+  <div class="np-mobile-backdrop"></div>
+  <aside class="np-mobile-menu">
+    <div class="d-flex align-items-center justify-content-between pb-3 border-bottom mb-3">
+      <div class="navbar-brand">
+        <span class="brand-leaf-icon"><i class="bi bi-heart-pulse-fill"></i></span>
+        <span>NOURIPET</span>
+      </div>
+      <button type="button" class="btn-close np-mobile-close" aria-label="Close"></button>
+    </div>
+    <ul class="list-unstyled d-flex flex-column gap-2 mb-4">
+      <li><a href="index.html" class="np-nav-link w-100">Home</a></li>
+      <li><a href="marketplace.html" class="np-nav-link w-100">Marketplace</a></li>
+      <li><a href="service-details.html" class="np-nav-link w-100">Nutrition Services</a></li>
+      <li><a href="index.html#how-it-works" class="np-nav-link w-100">How It Works</a></li>
+      <li><a href="signup.html?role=host" class="np-nav-link w-100">For Hosts</a></li>
+      <li><a href="resources.html" class="np-nav-link w-100">Resources</a></li>
+      <li><a href="about.html" class="np-nav-link w-100">About</a></li>
+      <li><a href="contact.html" class="np-nav-link w-100">Contact</a></li>
+    </ul>
+    <div class="mt-auto pt-3 border-top d-flex flex-column gap-2">
+      <div class="d-flex gap-2">
+        <a href="login.html" class="btn btn-np-secondary w-50 text-center">Login</a>
+        <a href="signup.html" class="btn btn-np-secondary w-50 text-center">Sign Up</a>
+      </div>
+      <a href="booking.html" class="btn btn-np-primary w-100 text-center">Book a Consultation</a>
+    </div>
+  </aside>
+
+  <!-- ======================================================================
+       MAIN QUOTE CALCULATOR PAGE
+       ====================================================================== -->
+  <section class="section-padding bg-subtle" style="background-color: var(--bg-subtle);">
+    <div class="container">
+      
+      <div class="text-center section-header">
+        <div class="section-eyebrow"><i class="bi bi-calculator text-success"></i> Real-Time Pricing Engine</div>
+        <h1 class="display-6 fw-bold font-serif mb-2">Your Personalized Booking Quote</h1>
+        <p class="section-subtitle">
+          Configure your pet profile, service level, specialist, and optional add-ons to generate an upfront, transparent quote with clear deposit terms.
+        </p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-10 col-xl-9">
+          
+          <div class="row g-4">
+            
+            <!-- Left: Configurations -->
+            <div class="col-lg-6">
+              <div class="np-card h-100 p-4">
+                <h4 class="fw-bold fs-5 mb-3 font-serif">Configure Parameters</h4>
+
+                <!-- Pet Selector -->
+                <div class="mb-3">
+                  <label class="form-label small">Pet Profile</label>
+                  <select id="quotePetType" class="form-select">
+                    <option value="dog" selected>Dog — Barnaby (Golden Retriever, 3 yrs)</option>
+                    <option value="cat">Cat — Mochi (Domestic Shorthair, 4 yrs)</option>
+                    <option value="puppy">Puppy — Charlie (Bernese Mountain Dog, 4 mos)</option>
+                    <option value="senior">Senior — Buster (Bulldog, 9 yrs)</option>
+                  </select>
+                </div>
+
+                <!-- Service Selector -->
+                <div class="mb-3">
+                  <label class="form-label small">Nutrition Service</label>
+                  <select id="quoteService" class="form-select">
+                    <option value="consultation" selected>Personalized Nutrition Consultation ($75)</option>
+                    <option value="meal-plan">30-Day Fresh Meal Plan ($120)</option>
+                    <option value="food-assessment">Food & Label Assessment ($55)</option>
+                    <option value="allergy">Allergy & Microbiome Guidance ($95)</option>
+                    <option value="weight">Metabolic Weight Protocol ($85)</option>
+                    <option value="puppy">Puppy & Kitten Growth Plan ($80)</option>
+                  </select>
+                </div>
+
+                <!-- Host Specialist -->
+                <div class="mb-3">
+                  <label class="form-label small">Selected Host Specialist</label>
+                  <select id="quoteHost" class="form-select">
+                    <option value="dr-maya-carter" selected>Dr. Maya Carter, M.S. (+$10 Clinical Tier)</option>
+                    <option value="dr-julian-vance">Dr. Julian Vance, DVM (+$15 DVM Tier)</option>
+                    <option value="elena-rostova">Elena Rostova, M.Sc. (+$5 Formulation Tier)</option>
+                    <option value="marcus-chen">Marcus Chen, B.Sc. ($0 Standard Tier)</option>
+                  </select>
+                </div>
+
+                <!-- Session Duration -->
+                <div class="mb-3">
+                  <label class="form-label small">Session Duration</label>
+                  <div class="d-flex gap-2">
+                    <div class="form-check form-check-inline flex-fill border p-2 rounded-2 text-center">
+                      <input class="form-check-input" type="radio" name="durationRadio" id="dur30" value="30">
+                      <label class="form-check-label small" for="dur30">30 min</label>
+                    </div>
+                    <div class="form-check form-check-inline flex-fill border p-2 rounded-2 text-center bg-light">
+                      <input class="form-check-input" type="radio" name="durationRadio" id="dur60" value="60" checked>
+                      <label class="form-check-label small fw-bold" for="dur60">60 min</label>
+                    </div>
+                    <div class="form-check form-check-inline flex-fill border p-2 rounded-2 text-center">
+                      <input class="form-check-input" type="radio" name="durationRadio" id="dur90" value="90">
+                      <label class="form-check-label small" for="dur90">90 min</label>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Modality -->
+                <div class="mb-4">
+                  <label class="form-label small">Modality</label>
+                  <select id="quoteModality" class="form-select">
+                    <option value="online" selected>Virtual Video (Zoom) — Free</option>
+                    <option value="clinic">In-Clinic Session (+ $10)</option>
+                    <option value="home-visit">At-Home Consultation (+ $25)</option>
+                  </select>
+                </div>
+
+                <!-- Add-ons Checkboxes -->
+                <div>
+                  <label class="form-label small fw-bold">Optional Diagnostic Add-ons</label>
+                  <div class="d-flex flex-column gap-2">
+                    <div class="form-check">
+                      <input class="form-check-input addon-selector" type="checkbox" value="recipe-cards" id="add1">
+                      <label class="form-check-label small" for="add1">
+                        Printed 30-Day Step-by-Step Recipe Book (+$20)
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input addon-selector" type="checkbox" value="microbiome-review" id="add2">
+                      <label class="form-check-label small" for="add2">
+                        Gut Microbiome Stool Lab Review (+$35)
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input addon-selector" type="checkbox" value="followup-checkin" id="add3">
+                      <label class="form-check-label small" for="add3">
+                        14-Day Priority Chat Follow-up Access (+$25)
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Right: Quote Summary -->
+            <div class="col-lg-6">
+              <div class="quote-preview-card h-100 d-flex flex-column justify-content-between">
+                
+                <div>
+                  <div class="d-flex justify-content-between align-items-center pb-3 border-bottom mb-3">
+                    <div>
+                      <span class="badge bg-success-subtle text-success border border-success-subtle">Estimate Breakdown</span>
+                      <h4 class="mb-0 fw-bold fs-5 mt-1" id="outServiceName">Personalized Nutrition Consultation</h4>
+                    </div>
+                    <span class="text-muted small">USD</span>
+                  </div>
+
+                  <!-- Details Specs -->
+                  <div class="d-flex flex-column gap-2 mb-3 small text-secondary">
+                    <div class="d-flex justify-content-between">
+                      <span>Host Specialist:</span>
+                      <strong id="outHostName" class="text-dark">Dr. Maya Carter, M.S.</strong>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <span>Duration:</span>
+                      <strong id="outDuration" class="text-dark">60 Minutes</strong>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <span>Modality:</span>
+                      <strong id="outModality" class="text-dark">Virtual Video Call (Zoom)</strong>
+                    </div>
+                  </div>
+
+                  <!-- Line Items -->
+                  <div class="p-3 rounded-3 border bg-white mb-3" style="background-color: var(--card-bg) !important;">
+                    <div class="quote-line-item">
+                      <span>Base Service Fee</span>
+                      <span class="fw-bold" id="outBaseFee">$85</span>
+                    </div>
+                    <div class="quote-line-item">
+                      <span>Modality Travel / Facility Fee</span>
+                      <span class="fw-bold" id="outModalityFee">$0</span>
+                    </div>
+                    <div class="quote-line-item">
+                      <span>Platform Booking & Escrow</span>
+                      <span class="fw-bold">$5</span>
+                    </div>
+                    <div class="quote-line-item">
+                      <span>Selected Add-ons</span>
+                      <span class="fw-bold" id="outAddonsFee">$0</span>
+                    </div>
+                    <div class="quote-line-item pt-2 border-top">
+                      <span class="fw-bold fs-6">Estimated Total</span>
+                      <span class="fw-bold fs-4 text-forest" id="outTotal">$90</span>
+                    </div>
+                  </div>
+
+                  <!-- Deposit Requirement Box -->
+                  <div class="quote-total-box">
+                    <div class="d-flex justify-content-between align-items-center mb-1">
+                      <div class="text-muted small">Required Deposit to Confirm:</div>
+                      <div class="fs-4 fw-bold text-success" id="outDeposit">$27</div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center text-muted small">
+                      <span>Remaining Balance (Due at session):</span>
+                      <span class="fw-bold" id="outRemaining">$63</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- CTA -->
+                <div class="mt-4">
+                  <a href="booking.html" class="btn btn-np-primary btn-np-lg w-100" id="quoteSecureBtn">
+                    <i class="bi bi-shield-lock-fill me-1"></i> Secure My Booking With Deposit
+                  </a>
+                  <div class="text-center mt-2">
+                    <span class="text-muted" style="font-size: 0.72rem;">
+                      <i class="bi bi-check-circle-fill text-success me-1"></i> Transparent template pricing demo · Zero cancellation penalty >24h
+                    </span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       FOOTER
+       ====================================================================== -->
+  <footer class="np-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="navbar-brand text-white mb-2">
+            <span class="brand-leaf-icon"><i class="bi bi-heart-pulse-fill"></i></span>
+            <span>NOURIPET</span>
+          </div>
+          <p class="small mb-3" style="color: var(--footer-text);">
+            Better Nutrition. Happier Pets. The premier marketplace connecting conscientious pet guardians with certified animal dietitians and custom meal formulators.
+          </p>
+        </div>
+
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5>Marketplace</h5>
+          <ul class="np-footer-links">
+            <li><a href="marketplace.html">Browse Services</a></li>
+            <li><a href="marketplace.html?filter=hosts">Find a Host</a></li>
+            <li><a href="marketplace.html?cat=pet-food">Pet Food</a></li>
+            <li><a href="marketplace.html?cat=plans">Nutrition Plans</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-6">
+          <h5>Resources</h5>
+          <ul class="np-footer-links">
+            <li><a href="resources.html">Nutrition Guides</a></li>
+            <li><a href="resources.html#faqs">Nutrition FAQs</a></li>
+            <li><a href="index.html#how-it-works">How It Works</a></li>
+            <li><a href="contact.html">Support & Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5>Company</h5>
+          <ul class="np-footer-links mb-3">
+            <li><a href="about.html">About NOURIPET</a></li>
+            <li><a href="signup.html?role=host">For Hosts & Specialists</a></li>
+            <li><a href="contact.html">Careers & Press</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="np-footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <div>© 2026 NOURIPET Inc. All rights reserved. Demo marketplace template.</div>
+        <div class="d-flex gap-3 mt-2 mt-md-0">
+          <a href="about.html" class="text-muted small">Privacy Policy</a>
+          <span class="text-muted">·</span>
+          <a href="about.html" class="text-muted small">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/quote.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const qEngine = new window.NouriQuoteEngine();
+
+      const selService = document.getElementById('quoteService');
+      const selHost = document.getElementById('quoteHost');
+      const selModality = document.getElementById('quoteModality');
+      const secureBtn = document.getElementById('quoteSecureBtn');
+
+      function recalculate() {
+        const durChecked = document.querySelector('input[name="durationRadio"]:checked');
+        const durVal = durChecked ? durChecked.value : '60';
+
+        qEngine.setService(selService.value);
+        qEngine.setHost(selHost.value);
+        qEngine.setDuration(durVal);
+        qEngine.setModality(selModality.value);
+
+        // Check add-ons
+        document.querySelectorAll('.addon-selector').forEach(chk => {
+          qEngine.toggleAddon(chk.value, chk.checked);
+        });
+
+        const res = qEngine.calculate();
+
+        document.getElementById('outServiceName').textContent = res.serviceName;
+        document.getElementById('outHostName').textContent = res.hostName;
+        document.getElementById('outDuration').textContent = `${res.durationMinutes} Minutes`;
+        document.getElementById('outModality').textContent = res.modality === 'online' ? 'Virtual Video (Zoom)' : (res.modality === 'clinic' ? 'In-Clinic Session' : 'At-Home Visit');
+        
+        document.getElementById('outBaseFee').textContent = `$${res.baseServiceFee}`;
+        document.getElementById('outModalityFee').textContent = `$${res.modalityFee}`;
+        document.getElementById('outAddonsFee').textContent = `$${res.addonsTotal}`;
+        document.getElementById('outTotal').textContent = `$${res.totalAmount}`;
+        document.getElementById('outDeposit').textContent = `$${res.depositRequired}`;
+        document.getElementById('outRemaining').textContent = `$${res.remainingBalance}`;
+
+        if (secureBtn) {
+          secureBtn.href = `booking.html?service=${selService.value}&host=${selHost.value}&duration=${durVal}&modality=${selModality.value}`;
+        }
+      }
+
+      [selService, selHost, selModality].forEach(el => el.addEventListener('change', recalculate));
+      document.querySelectorAll('input[name="durationRadio"], .addon-selector').forEach(el => el.addEventListener('change', recalculate));
+
+      recalculate();
+    });
+  </script>
+
+</body>
+</html>
