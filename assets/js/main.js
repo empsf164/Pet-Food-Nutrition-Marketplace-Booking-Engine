@@ -188,4 +188,53 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
+
+  // ------------------------------------------------------------------------
+  // 8. BACK TO TOP BUTTON
+  // ------------------------------------------------------------------------
+  const backToTopBtn = document.getElementById('backToTopBtn');
+  if (backToTopBtn) {
+    const checkBackToTop = () => {
+      if (window.scrollY > 280) {
+        backToTopBtn.classList.add('visible');
+      } else {
+        backToTopBtn.classList.remove('visible');
+      }
+    };
+    window.addEventListener('scroll', checkBackToTop, { passive: true });
+    checkBackToTop();
+
+    backToTopBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  }
+
+  // ------------------------------------------------------------------------
+  // 9. PASSWORD VISIBILITY TOGGLE (EYE ICON)
+  // ------------------------------------------------------------------------
+  const passwordToggles = document.querySelectorAll('.toggle-password-btn');
+  passwordToggles.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const targetId = btn.getAttribute('data-target');
+      const input = document.getElementById(targetId);
+      const icon = btn.querySelector('i');
+      if (input && icon) {
+        if (input.type === 'password') {
+          input.type = 'text';
+          icon.className = 'bi bi-eye-slash-fill';
+          btn.setAttribute('aria-label', 'Hide password');
+        } else {
+          input.type = 'password';
+          icon.className = 'bi bi-eye-fill';
+          btn.setAttribute('aria-label', 'Show password');
+        }
+      }
+    });
+  });
 });
+

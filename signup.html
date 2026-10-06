@@ -54,12 +54,12 @@
 
           <!-- Role Selector Toggle -->
           <label class="form-label small fw-bold mb-2">I am registering as:</label>
-          <div class="d-flex gap-2 mb-4">
+          <div class="d-flex gap-2 mb-4 role-toggle-container">
             <button type="button" class="btn btn-np-primary flex-fill btn-sm role-toggle-btn active" data-role="parent" id="roleParentBtn">
-              <i class="bi bi-person-heart me-1"></i> Pet Owner
+              <i class="bi bi-person-heart me-1"></i> <span>Pet Owner</span>
             </button>
             <button type="button" class="btn btn-outline-secondary flex-fill btn-sm role-toggle-btn" data-role="host" id="roleHostBtn">
-              <i class="bi bi-patch-check me-1"></i> Specialist / Host
+              <i class="bi bi-patch-check me-1"></i> <span>Specialist / Host</span>
             </button>
           </div>
 
@@ -108,7 +108,12 @@
 
               <div class="col-12">
                 <label for="signupPassword" class="form-label small fw-bold">Create Password <span class="text-danger">*</span></label>
-                <input type="password" id="signupPassword" class="form-control" placeholder="Minimum 8 characters" minlength="8" required>
+                <div class="input-group">
+                  <input type="password" id="signupPassword" class="form-control" placeholder="Minimum 8 characters" minlength="8" required>
+                  <button class="btn btn-outline-secondary toggle-password-btn" type="button" data-target="signupPassword" aria-label="Toggle password visibility">
+                    <i class="bi bi-eye"></i>
+                  </button>
+                </div>
               </div>
             </div>
 
@@ -150,10 +155,6 @@
             <span class="text-muted" style="font-size: 0.72rem;">*Front-end demo registration. No database write occurs.</span>
           </div>
 
-        </div>
-
-        <div class="text-center mt-3">
-          <a href="index.html" class="text-muted small text-decoration-none">&larr; Back to Homepage</a>
         </div>
 
       </div>

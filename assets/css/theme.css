@@ -167,8 +167,17 @@
   --slot-disabled-bg: #101915;
   --slot-disabled-text: #4F5E56;
 
+  --color-sage-subtle: #182B22;
+  --color-sage-light: #203B2E;
+  --color-sand: #293D33;
+  --color-sand-light: #16261F;
+  --color-amber-light: rgba(217, 130, 43, 0.15);
+  --color-terracotta-light: rgba(200, 109, 81, 0.15);
+  --color-bg-secondary: #121E19;
+
   --footer-bg: #0B120F;
-  --footer-text: #9EAEA3;
+  --footer-text: #A4B5AA;
   --footer-heading: #F4F6F4;
-  --footer-border: rgba(255, 255, 255, 0.06);
+  --footer-border: rgba(255, 255, 255, 0.08);
 }
+

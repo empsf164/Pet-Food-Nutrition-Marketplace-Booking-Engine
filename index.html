@@ -60,6 +60,9 @@
             <a href="index.html" class="np-nav-link active">Home</a>
           </li>
           <li class="np-nav-item">
+            <a href="about.html" class="np-nav-link">About</a>
+          </li>
+          <li class="np-nav-item">
             <a href="marketplace.html" class="np-nav-link">Marketplace</a>
           </li>
           <li class="np-nav-item">
@@ -67,9 +70,6 @@
           </li>
           <li class="np-nav-item">
             <a href="resources.html" class="np-nav-link">Resources</a>
-          </li>
-          <li class="np-nav-item">
-            <a href="about.html" class="np-nav-link">About</a>
           </li>
           <li class="np-nav-item">
             <a href="contact.html" class="np-nav-link">Contact</a>
@@ -119,12 +119,13 @@
 
     <ul class="list-unstyled d-flex flex-column gap-2 mb-4">
       <li><a href="index.html" class="np-nav-link w-100 active">Home</a></li>
+      <li><a href="about.html" class="np-nav-link w-100">About</a></li>
       <li><a href="marketplace.html" class="np-nav-link w-100">Marketplace</a></li>
       <li><a href="services.html" class="np-nav-link w-100">Nutrition Services</a></li>
       <li><a href="resources.html" class="np-nav-link w-100">Resources</a></li>
-      <li><a href="about.html" class="np-nav-link w-100">About</a></li>
       <li><a href="contact.html" class="np-nav-link w-100">Contact</a></li>
     </ul>
+
 
     <div class="mt-auto pt-3 border-top d-flex flex-column gap-2">
       <a href="login.html" class="btn btn-np-secondary w-100 text-center">Login</a>
@@ -216,26 +217,25 @@
 
       <!-- Floating Quick Search & Discovery Bar -->
       <div class="floating-search-bar">
-        <form id="heroSearchForm" class="row g-3 align-items-center">
+        <form id="heroSearchForm" class="row g-3 align-items-stretch">
 
-          <div class="col-12 col-md-3">
+          <div class="col-12 col-md-6 col-lg-3">
             <div class="search-field-group">
-              <label class="search-field-label" for="searchPetType"><i class="bi bi-tag-fill me-1"></i> Pet Type</label>
+              <label class="search-field-label" for="searchPetType"><i class="bi bi-tag-fill me-1 text-forest"></i> Pet Type</label>
               <select id="searchPetType" class="search-field-select" aria-label="Select pet type">
                 <option value="dog" selected>Dog (Canine)</option>
                 <option value="cat">Cat (Feline)</option>
-                <option value="puppy">Puppy (< 1 yr)</option>
-                <option value="kitten">Kitten (< 1 yr)</option>
+                <option value="puppy">Puppy (&lt; 1 yr)</option>
+                <option value="kitten">Kitten (&lt; 1 yr)</option>
                 <option value="senior">Senior Pet (8+ yrs)</option>
                 <option value="other">Other Companion Pet</option>
               </select>
             </div>
           </div>
 
-          <div class="col-12 col-md-4">
+          <div class="col-12 col-md-6 col-lg-4">
             <div class="search-field-group">
-              <label class="search-field-label" for="searchServiceType"><i class="bi bi-heart-pulse-fill me-1"></i> What
-                do you need?</label>
+              <label class="search-field-label" for="searchServiceType"><i class="bi bi-heart-pulse-fill me-1 text-forest"></i> What do you need?</label>
               <select id="searchServiceType" class="search-field-select" aria-label="Select service required">
                 <option value="consultation" selected>Nutrition Consultation (60 min)</option>
                 <option value="meal-plan">Personalized 30-Day Meal Plan</option>
@@ -247,10 +247,9 @@
             </div>
           </div>
 
-          <div class="col-12 col-md-3">
+          <div class="col-12 col-md-6 col-lg-3">
             <div class="search-field-group">
-              <label class="search-field-label" for="searchLocation"><i class="bi bi-geo-alt-fill me-1"></i> Location &
-                Mode</label>
+              <label class="search-field-label" for="searchLocation"><i class="bi bi-geo-alt-fill me-1 text-forest"></i> Location & Mode</label>
               <select id="searchLocation" class="search-field-select" aria-label="Select location or modality">
                 <option value="anywhere" selected>Anywhere (Online Video)</option>
                 <option value="portland">Portland, OR (In-Person)</option>
@@ -261,9 +260,9 @@
             </div>
           </div>
 
-          <div class="col-12 col-md-2 text-md-end">
-            <button type="submit" class="btn btn-np-primary w-100" id="heroSearchBtn">
-              <i class="bi bi-search me-1"></i> Find Services
+          <div class="col-12 col-md-6 col-lg-2 d-flex align-items-center">
+            <button type="submit" class="btn btn-np-primary w-100 hero-search-submit-btn" id="heroSearchBtn">
+              <i class="bi bi-search me-1"></i> <span>Find Services</span>
             </button>
           </div>
 
@@ -1256,6 +1255,11 @@
       updateHomepageQuote();
     });
   </script>
+
+  <!-- Back to Top Button -->
+  <button type="button" class="back-to-top-btn" id="backToTopBtn" aria-label="Back to top" title="Back to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
 
 </body>
 

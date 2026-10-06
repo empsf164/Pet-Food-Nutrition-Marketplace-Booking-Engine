@@ -88,6 +88,70 @@ html, body {
     flex-wrap: wrap !important;
     justify-content: center !important;
   }
+
+  /* Hero button alignment in tablet view */
+  .hero-cta-group {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 1rem !important;
+  }
+
+  .hero-cta-group .btn {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    min-height: 48px !important;
+  }
+
+  /* Hero search discovery bar in tablet view (768px - 1024px) */
+  .floating-search-bar {
+    padding: 1.25rem 1.5rem !important;
+    margin-top: 2rem !important;
+  }
+
+  .floating-search-bar #heroSearchForm {
+    align-items: stretch !important;
+  }
+
+  .floating-search-bar .col-md-6 {
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+  }
+
+  .floating-search-bar .search-field-group {
+    min-height: 64px !important;
+    padding: 0.65rem 1rem !important;
+  }
+
+  .floating-search-bar .hero-search-submit-btn {
+    min-height: 64px !important;
+    width: 100% !important;
+  }
+
+  /* Contact page 1024px text bounds to prevent overflowing card */
+  .contact-social-pill {
+    max-width: 100%;
+    font-size: 0.8rem;
+    padding: 0.45rem 0.75rem;
+  }
+
+  .facility-badge-pill {
+    width: 100% !important;
+    max-width: 100% !important;
+    white-space: normal !important;
+    word-break: normal !important;
+    font-size: 0.78rem !important;
+    padding: 0.5rem 0.65rem !important;
+    line-height: 1.3 !important;
+  }
+
+  .np-card {
+    word-break: break-word;
+    overflow-wrap: anywhere;
+  }
 }
 
 @media (max-width: 991px) {
@@ -105,6 +169,20 @@ html, body {
 
   .hero-headline {
     font-size: 2.5rem;
+  }
+
+  .hero-cta-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .hero-cta-group .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
   }
 
   .hero-image-wrapper {
@@ -137,6 +215,7 @@ html, body {
     min-width: 75px;
   }
 }
+
 
 /* --------------------------------------------------------------------------
    Small Tablets & Large Phones (Below 768px)
@@ -192,6 +271,20 @@ html, body {
 
   .quote-preview-card {
     padding: 1.5rem;
+  }
+
+  .floating-search-bar {
+    padding: 1rem !important;
+  }
+
+  .floating-search-bar .search-field-group {
+    min-height: 58px !important;
+    padding: 0.55rem 0.85rem !important;
+  }
+
+  .floating-search-bar .hero-search-submit-btn {
+    min-height: 50px !important;
+    width: 100% !important;
   }
 
   .np-footer {
