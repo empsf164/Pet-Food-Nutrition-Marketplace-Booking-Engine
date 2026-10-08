@@ -6,10 +6,10 @@
    Zero horizontal overflow guarantee.
    ========================================================================== */
 
-/* Prevent horizontal scroll globally */
+/* Prevent horizontal scroll globally without breaking position: sticky */
 html, body {
   max-width: 100%;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 /* --------------------------------------------------------------------------
@@ -66,14 +66,12 @@ html, body {
   }
 }
 
-/* 1024px Tablet / iPad view card alignments: 2 cards per row, last odd card centered */
+/* 1024px Tablet / iPad view card alignments */
 @media (max-width: 1024px) and (min-width: 768px) {
   .popular-services-grid > [class*="col-"],
   .booking-steps-grid > [class*="col-"],
   .food-categories-grid > [class*="col-"],
-  .customer-stories-grid > [class*="col-"],
-  #servicesGrid > [class*="col-"],
-  .service-card-wrapper {
+  .customer-stories-grid > [class*="col-"] {
     flex: 0 0 50% !important;
     max-width: 50% !important;
     width: 50% !important;
@@ -82,28 +80,41 @@ html, body {
   .popular-services-grid,
   .booking-steps-grid,
   .food-categories-grid,
-  .customer-stories-grid,
-  #servicesGrid {
+  .customer-stories-grid {
     display: flex !important;
     flex-wrap: wrap !important;
     justify-content: center !important;
   }
 
-  /* Hero button alignment in tablet view */
+  /* Nutrition Services page catalog grid: 1 card per row in tablet view */
+  #servicesGrid > [class*="col-"],
+  #servicesGrid .service-card-wrapper {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  /* Hero button alignment in tablet view (1024px) — Equal button size */
   .hero-cta-group {
     display: flex !important;
     flex-direction: row !important;
-    flex-wrap: wrap !important;
-    align-items: center !important;
+    align-items: stretch !important;
     justify-content: flex-start !important;
     gap: 1rem !important;
+    width: 100% !important;
   }
 
   .hero-cta-group .btn {
+    flex: 1 1 0 !important;
+    min-width: 0 !important;
+    min-height: 52px !important;
     display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
-    min-height: 48px !important;
+    text-align: center !important;
+    padding: 0.85rem 1.25rem !important;
+    font-size: 0.95rem !important;
+    white-space: nowrap !important;
   }
 
   /* Hero search discovery bar in tablet view (768px - 1024px) */
@@ -285,6 +296,42 @@ html, body {
   .floating-search-bar .hero-search-submit-btn {
     min-height: 50px !important;
     width: 100% !important;
+  }
+
+  /* Book a consultation page button sizing in mobile view */
+  #nouripetBookingWizard .d-flex.justify-content-between.align-items-center.mt-5,
+  .wizard-nav-actions {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 0.75rem !important;
+    width: 100% !important;
+    align-items: stretch !important;
+  }
+
+  #bookingPrevBtn,
+  #bookingNextBtn {
+    flex: 1 1 0 !important;
+    width: 100% !important;
+    min-height: 48px !important;
+    padding: 0.75rem 0.5rem !important;
+    font-size: 0.88rem !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    margin: 0 !important;
+  }
+
+  .payment-method-tab {
+    flex: 1 1 0 !important;
+    min-height: 44px !important;
+    font-size: 0.78rem !important;
+    padding: 0.5rem 0.2rem !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    white-space: nowrap !important;
   }
 
   .np-footer {

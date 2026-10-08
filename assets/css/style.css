@@ -24,7 +24,7 @@ body {
   color: var(--text-primary);
   background-color: var(--bg-primary);
   transition: background-color var(--transition-base), color var(--transition-base);
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -439,13 +439,20 @@ button.btn-outline-secondary {
   font-family: var(--font-serif);
   font-size: 1.65rem;
   font-weight: 700;
-  color: var(--color-forest);
+  color: var(--color-forest) !important;
   text-decoration: none;
   letter-spacing: -0.01em;
 }
 
-[data-theme="dark"] .navbar-brand {
-  color: #FAF8F5;
+.navbar-brand span:not(.brand-leaf-icon) {
+  color: var(--color-forest);
+}
+
+[data-theme="dark"] .navbar-brand,
+[data-bs-theme="dark"] .navbar-brand,
+[data-theme="dark"] .navbar-brand span:not(.brand-leaf-icon),
+[data-bs-theme="dark"] .navbar-brand span:not(.brand-leaf-icon) {
+  color: #FAF8F5 !important;
 }
 
 .brand-leaf-icon {
@@ -1944,13 +1951,43 @@ button.btn-outline-secondary {
   color: #A3D1B1;
 }
 
-/* Callout CTA banner button responsive alignment */
+/* Service cards equal button sizing on Nutrition Services page */
+.service-card-wrapper .card-body .d-flex.gap-2 {
+  display: flex !important;
+  align-items: stretch !important;
+  gap: 0.5rem !important;
+}
+
+.service-card-wrapper .card-body .d-flex.gap-2 .btn {
+  flex: 1 1 0 !important;
+  min-width: 88px !important;
+  min-height: 38px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  padding: 0.45rem 0.75rem !important;
+  font-size: 0.85rem !important;
+  white-space: nowrap !important;
+}
+
+/* Callout CTA banner button responsive alignment & equal sizing */
 .cta-banner-buttons {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1rem;
   flex-wrap: wrap;
+}
+
+.cta-banner-buttons .btn {
+  min-width: 250px;
+  min-height: 52px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0.85rem 1.5rem;
 }
 
 @media (max-width: 767px) {
@@ -1964,6 +2001,7 @@ button.btn-outline-secondary {
 
   .cta-banner-buttons .btn {
     width: 100% !important;
+    min-width: unset;
     text-align: center;
   }
 }
